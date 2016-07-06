@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <!--各个DAL层注入-->
+  <object id="CategoryDAL" type="ArchitectureFrame.DAL.CategoryDAL,ArchitectureFrame.DAL"/>
+  <object id="ArticleDAL" type="ArchitectureFrame.DAL.ArticleDAL,ArchitectureFrame.DAL"/>
+</objects>

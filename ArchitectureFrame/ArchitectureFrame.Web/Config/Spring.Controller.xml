@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <!--各个Controller模块中注入Service对象属性-->
+  <object id="CategoryController" type="ArchitectureFrame.Web.Controllers.CategoryController,ArchitectureFrame.Web" singleton="false">
+    <property name="CategoryService" ref="CategoryService"/>
+  </object>
+
+  <!--<object id="ArticleController" type="ArchitectureFrame.Web.Controllers.ArticleController,ArchitectureFrame.Web">
+    <property name="ArticleService" ref="ArticleService"/>
+  </object>-->
+  
+</objects>

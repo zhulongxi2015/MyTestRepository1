@@ -1,0 +1,9 @@
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.IDAL.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.IDAL.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\EntityFramework.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\EntityFramework.xml
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.csprojResolveAssemblyReference.cache
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.pdb

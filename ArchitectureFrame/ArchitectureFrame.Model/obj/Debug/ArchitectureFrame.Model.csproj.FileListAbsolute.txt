@@ -1,0 +1,7 @@
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\EntityFramework.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\EntityFramework.xml
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.csprojResolveAssemblyReference.cache

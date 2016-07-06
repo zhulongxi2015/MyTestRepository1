@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <!--DAL 层注入DbContext对象属性-->
+  <object name="ArchitectureFrameContext" type="ArchitectureFrame.Model.ArchitectureFrameEntities,ArchitectureFrame.Model" scope="request">
+    <constructor-arg name="connectionStringOrName" value="ArchitectureFrameEntities">
+    </constructor-arg>
+  </object>
+  <object id="Repository" abstract="true" scope="request">
+    <constructor-arg ref="ArchitectureFrameContext"/>
+  </object>
+
+  <object name="CategoryDAL" type="ArchitectureFrame.DAL.CategoryDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
+  <object name="ArticleDAL" type="ArchitectureFrame.DAL.ArticleDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
+</objects>

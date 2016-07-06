@@ -1,0 +1,13 @@
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.IService.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.IService.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.DTO.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.IDAL.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\EntityFramework.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.DTO.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.IDAL.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\bin\Debug\EntityFramework.xml
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\obj\Debug\ArchitectureFrame.IService.csprojResolveAssemblyReference.cache
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\obj\Debug\ArchitectureFrame.IService.dll
+D:\Porjects\ArchitectureFrame\ArchitectureFrame.IService\obj\Debug\ArchitectureFrame.IService.pdb
