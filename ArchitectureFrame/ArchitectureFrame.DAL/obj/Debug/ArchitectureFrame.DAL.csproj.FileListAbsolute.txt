@@ -3,3 +3,8 @@ D:\Porjects\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.DAL.pd
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.csprojResolveAssemblyReference.cache
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.dll
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.csprojResolveAssemblyReference.cache
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DAL\obj\Debug\ArchitectureFrame.DAL.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.DAL.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.DAL.pdb

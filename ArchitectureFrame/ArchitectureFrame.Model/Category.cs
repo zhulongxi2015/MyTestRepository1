@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ArchitectureFrame.Model
 {
-   public partial class Category
+   public partial class Category:ModelBase
     {
         [Key]
         public int CategoryID { get; set; }

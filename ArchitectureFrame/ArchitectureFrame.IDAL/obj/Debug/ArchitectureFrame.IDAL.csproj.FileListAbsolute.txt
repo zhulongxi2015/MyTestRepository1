@@ -7,3 +7,12 @@ D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\EntityFramework.x
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.csprojResolveAssemblyReference.cache
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.dll
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.csprojResolveAssemblyReference.cache
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\obj\Debug\ArchitectureFrame.IDAL.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.IDAL.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.IDAL.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\EntityFramework.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.IDAL\bin\Debug\EntityFramework.xml

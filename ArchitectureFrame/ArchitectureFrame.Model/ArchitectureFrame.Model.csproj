@@ -50,8 +50,13 @@
     <Compile Include="Article.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="BaseModel\ModelBase.cs" />
+    <Compile Include="Mappings\ArticleMapping.cs" />
     <Compile Include="Mappings\CategoryMapping.cs" />
+    <Compile Include="Mappings\IMapping.cs" />
+    <Compile Include="Mappings\MappingBase.cs" />
     <Compile Include="Mappings\MappingExtensions\EntityTypeConfigurationExtensions.cs" />
+    <Compile Include="ModelExtensions\ArticleExtensions.cs" />
+    <Compile Include="ModelExtensions\CategoryExtensions.cs" />
     <Compile Include="ModelExtensions\ModelBaseExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ArchitectureFrame.Model.Mappings
 {
-   public class CategoryMapping: EntityTypeConfiguration<Category>
+   public class CategoryMapping:MappingBase<Category>,IMapping
     {
         public CategoryMapping()
         {

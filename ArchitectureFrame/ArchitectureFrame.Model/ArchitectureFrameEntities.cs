@@ -12,6 +12,8 @@ namespace ArchitectureFrame.Model
 {
     public partial class ArchitectureFrameEntities : DbContext
     {
+        private IList<Mappings.IMapping> MappingInstances { get; set; }//通过spring.net注入Mapping对象实例
+
         public ArchitectureFrameEntities() : base("ArchitectureFrameEntities")
         {
             this.Configuration.ProxyCreationEnabled = true;
@@ -29,11 +31,17 @@ namespace ArchitectureFrame.Model
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
-            var mappings = GetType().Assembly.GetInheritedTypes(typeof(EntityTypeConfiguration<>));
-            foreach (var mapping in mappings)
+            //var Mappings = GetType().Assembly.GetInheritedTypes(typeof(EntityTypeConfiguration<>));
+            //foreach (var instance in Mappings)
+            //{
+            //    dynamic instance = Activator.CreateInstance(mapping);
+            //    modelBuilder.Configurations.Add(instance);
+
+            //}
+
+            foreach (var  mapping in MappingInstances)
             {
-                dynamic instance = Activator.CreateInstance(mapping);
-                modelBuilder.Configurations.Add(instance);
+                mapping.RegistTo(modelBuilder.Configurations);
             }
         }
         public DbSet<Category> Categories { get; set; }

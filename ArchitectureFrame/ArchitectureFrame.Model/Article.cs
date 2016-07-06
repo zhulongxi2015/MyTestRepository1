@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ArchitectureFrame.Model
 {
-   public partial class Article
+   public partial class Article:ModelBase
     {
         [Key]
         [Column(Order =0)]
