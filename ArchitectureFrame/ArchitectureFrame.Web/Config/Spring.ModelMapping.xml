@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <objects xmlns="http://www.springframework.net">
-  <!--EF上下文DbContext中注入Mappings对象属性:List<IMapping>类型-->
-  <object id="ArchitectureDbContext" type="ArchitectureFrame.Model.ArchitectureFrameEntities,ArchitectureFrame.Model" scope="request" singleton="false">
+  <!--EF上下文DbContext中注入构造函数参数和Mappings对象属性:List<IMapping>类型-->
+  <object id="ArchitectureFrameEntities" type="ArchitectureFrame.Model.ArchitectureFrameEntities,ArchitectureFrame.Model" scope="request">
+    <constructor-arg name="connectionStringOrName" value="ArchitectureFrameEntities"/>
     <property name="MappingInstances">
       <list element-type="ArchitectureFrame.Model.Mappings.IMapping,ArchitectureFrame.Model">
         <ref object="CategoryMapping"/>
@@ -9,5 +10,7 @@
       </list>
     </property>
   </object>
-         
+
+  <object id="CategoryMapping" type="ArchitectureFrame.Model.Mappings.CategoryMapping,ArchitectureFrame.Model" singleton="true"/>
+  <object id="ArticleMapping" type="ArchitectureFrame.Model.Mappings.ArticleMapping,ArchitectureFrame.Model" singleton="true"/>
 </objects>

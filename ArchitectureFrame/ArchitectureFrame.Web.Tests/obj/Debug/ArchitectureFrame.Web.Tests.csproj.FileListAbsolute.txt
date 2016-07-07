@@ -64,3 +64,5 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.csprojResolveAssemblyReference.cache
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.pdb

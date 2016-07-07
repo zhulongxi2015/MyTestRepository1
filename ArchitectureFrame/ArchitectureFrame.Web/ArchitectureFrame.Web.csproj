@@ -46,6 +46,7 @@
     <CodeAnalysisRuleSet />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=1.0.0.155, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL" />
     <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>libs\Common.Logging.dll</HintPath>
@@ -215,10 +216,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="ControllersBase\BaseController.cs" />
     <Compile Include="ControllersBase\SpringControllerFacotry.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CategoryController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,7 +231,7 @@
     <EmbeddedResource Include="Config\Spring.DAL.xml" />
     <EmbeddedResource Include="Config\Spring.Service.xml" />
     <Content Include="Config\Spring.DbContext.xml" />
-    <Content Include="Config\Spring.ModelMapping.xml" />
+    <EmbeddedResource Include="Config\Spring.ModelMapping.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -259,6 +256,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Public\Views\Web.config" />
+    <Content Include="Areas\Public\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\_Shared\_Layout.cshtml" />
+    <Content Include="Areas\Public\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Public\Views\Category\Index.cshtml" />
+    <Content Include="Config\Spring.Controller.Admin.xml" />
+    <Content Include="Areas\Admin\Views\Account\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -278,40 +285,11 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Logs\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -326,6 +304,10 @@
       <Project>{c6e471e7-4738-4978-9269-8de482b4e741}</Project>
       <Name>ArchitectureFrame.DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Infrastructure\ArchitectureFrame.Infrastructure.csproj">
+      <Project>{28d11698-c171-4ac0-a576-0179a36506f1}</Project>
+      <Name>ArchitectureFrame.Infrastructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureFrame.IService\ArchitectureFrame.IService.csproj">
       <Project>{ED4839C8-B5D1-435D-801A-3F9441F2E9C5}</Project>
       <Name>ArchitectureFrame.IService</Name>
@@ -333,6 +315,14 @@
     <ProjectReference Include="..\ArchitectureFrame.Model\ArchitectureFrame.Model.csproj">
       <Project>{1b4b21f5-930d-4a82-aac4-5108a9d89792}</Project>
       <Name>ArchitectureFrame.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Web.Admin\ArchitectureFrame.Web.Admin.csproj">
+      <Project>{d5dad79a-d33a-4ea0-b228-cbf9b1ed2b5c}</Project>
+      <Name>ArchitectureFrame.Web.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Web.Public\ArchitectureFrame.Web.Public.csproj">
+      <Project>{c69f2e5f-1080-44ee-9ea8-b4575562cc8a}</Project>
+      <Name>ArchitectureFrame.Web.Public</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

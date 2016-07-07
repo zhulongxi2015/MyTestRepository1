@@ -1,4 +1,5 @@
-﻿using Spring.Context.Support;
+﻿using ArchitectureFrame.Infrastructure.Extensions;
+using Spring.Context.Support;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,15 +20,28 @@ namespace ArchitectureFrame.Web
             //WebApplicationContext ctx = ContextRegistry.GetContext() as WebApplicationContext;
 
             //注册SpringControllerFactory类。
-            ControllerBuilder.Current.SetControllerFactory(typeof(ControllersBase.SpringControllerFacotry));
+            ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Public.ControllerBase.SpringControllerFacotry));
+            ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry));
 
-            AreaRegistration.RegisterAllAreas();
+            AreaRegistration.RegisterAllAreas();//注册区域路由
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //RouteConfig.RegisterRoutes(RouteTable.Routes);//注册RouteConfig中的路由
+            this.RegisterRoutes(RouteTable.Routes);//注册自定义路由
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
         }
+        /// <summary>
+        /// 注册自定义路由
+        /// </summary>
+        /// <param name="routes"></param>
+        private void RegisterRoutes(RouteCollection routes)
+        {
+            var nameSpaces = new[] { "ArchitectureFrame.Web.Public.Controllers.*" };
+            var defaults = new { controller = "Category", action = "Index", id = UrlParameter.Optional };
 
+            routes.Map("", defaults);
+            routes.Map("{controller}/{action}/{id}", defaults, nameSpaces);
+        }
         protected void Application_Error(object sender, EventArgs e)
         {
             log4net.ILog logger = log4net.LogManager.GetLogger("Logger");

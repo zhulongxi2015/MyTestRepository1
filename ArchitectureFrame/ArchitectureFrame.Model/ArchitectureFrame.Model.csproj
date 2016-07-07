@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\ArchitectureFrame.Web\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,6 +50,7 @@
     <Compile Include="Article.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="BaseModel\ModelBase.cs" />
+    <Compile Include="Enums\Gender.cs" />
     <Compile Include="Mappings\ArticleMapping.cs" />
     <Compile Include="Mappings\CategoryMapping.cs" />
     <Compile Include="Mappings\IMapping.cs" />
@@ -60,9 +61,7 @@
     <Compile Include="ModelExtensions\ModelBaseExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\ArchitectureFrame.Infrastructure\ArchitectureFrame.Infrastructure.csproj">
       <Project>{28d11698-c171-4ac0-a576-0179a36506f1}</Project>

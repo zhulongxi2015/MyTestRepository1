@@ -7,12 +7,13 @@ using ArchitectureFrame.Infrastructure.Extensions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ArchitectureFrame.Model.Mappings;
 
 namespace ArchitectureFrame.Model
 {
     public partial class ArchitectureFrameEntities : DbContext
     {
-        private IList<Mappings.IMapping> MappingInstances { get; set; }//通过spring.net注入Mapping对象实例
+        public IList<IMapping> MappingInstances { get; set; }//通过spring.net注入Mapping对象实例
 
         public ArchitectureFrameEntities() : base("ArchitectureFrameEntities")
         {

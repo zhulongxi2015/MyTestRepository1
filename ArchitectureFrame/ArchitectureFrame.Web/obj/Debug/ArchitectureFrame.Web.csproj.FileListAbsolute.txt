@@ -112,7 +112,6 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\Antlr3.Runtime.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.DTO.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.IService.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\Common.Logging.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\EntityFramework.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\EntityFramework.SqlServer.dll
@@ -182,3 +181,9 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\Microsoft.Owin.Security.Google.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\AutoMapper.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Infrastructure.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Infrastructure.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Admin.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Admin.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.pdb

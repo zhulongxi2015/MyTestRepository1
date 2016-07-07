@@ -61,5 +61,10 @@ namespace ArchitectureFrame.Service
         {
             return this.CategoryDAL.DeleteByKeys(keys);
         }
+
+        public Category GetById(int id)
+        {
+            return this.CategoryDAL.GetbyId(id);
+        }
     }
 }

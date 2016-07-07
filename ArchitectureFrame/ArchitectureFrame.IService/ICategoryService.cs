@@ -13,6 +13,7 @@ namespace ArchitectureFrame.IService
         //定义跟业务逻辑相关的方法
         IQueryable<Category> GetAll();
         IQueryable<Category> GetPageList(ISQLPaging paging);
+        Category GetById(int id);
         bool Add(CategoryDTO dto);
         bool Update(CategoryDTO dto);
         bool Delete(CategoryDTO dto);

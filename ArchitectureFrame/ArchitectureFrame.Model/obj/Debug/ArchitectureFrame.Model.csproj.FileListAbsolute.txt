@@ -20,3 +20,5 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Mod
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\Newtonsoft.Json.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\System.Web.Mvc.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\bin\Debug\Microsoft.Web.Infrastructure.xml
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.pdb
