@@ -1,0 +1,69 @@
+﻿@model SettingIndexViewModel
+@{
+    Model.Title = "System Settings";
+}
+<script src="~/Areas/Admin/js/setting/index.js"></script>
+
+<div class="panel">
+    <div class="panel-title">
+        Last Memory Time：@SettingContext.Instance.Version   
+        <a href="/admin/setting/refresh">Refresh Memory</a>
+    </div>
+    <div class="panel-grid">
+        <table class="grid">
+            <colgroup>
+                <col width="100px" />
+                <col width="200px" />
+                <col width="200px" />
+                <col width="200px" />
+                <col width="300px" />
+                <col width="auto" />
+                <col width="100px" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th class="center">Match</th>
+                    <th>Key(Memory)</th>
+                    <th>Value(Memory)</th>
+                    <th>Key(DB)</th>
+                    <th>Value(BD)</th>
+                    <th>Notes</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Settings)
+                {
+                    var isMatch = item.IsMatch();
+                    <tr class="@(isMatch ? string.Empty : "error")">
+                        <td class="center">@(isMatch ? "Yes" : "No")</td>
+                        <td>@item.MemKey</td>
+                        <td>
+                            @if (item.IsComplexType)
+                            {
+                                <a>view</a>
+                            }
+                            else
+                            {
+                                @item.MemValue
+                            }
+                        </td>
+                        <td class="db-key">@item.DbKey</td>
+                        <td class="db-value">
+                            <span>@item.DbValue</span>
+                            <input type="text" class="txt hide" value="@item.DbValue"/>
+                        </td>
+                        <td>@item.Notes</td>
+                        <td class="center">
+                            <a href="javascript:void(0);" class="btn-edit">edit</a>
+                            <div class="hide save">
+                                <a href="javascript:void(0);" class="btn-save">save</a> |
+                                <a href="javascript:void(0);" class="btn-cancel">cancel</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

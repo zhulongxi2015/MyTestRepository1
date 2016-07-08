@@ -1,0 +1,16 @@
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\MvcSolution.Data.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\MvcSolution.Data.pdb
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\EntityFramework.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\MvcSolution.Infrastructure.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\System.Web.Mvc.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\System.Web.Razor.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\System.Web.WebPages.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\bin\Debug\MvcSolution.Infrastructure.pdb
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\obj\Debug\MvcSolution.Data.csprojResolveAssemblyReference.cache
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\obj\Debug\MvcSolution.Data.dll
+C:\Users\v-lozhu\Desktop\mvcsolution-master\mvcsolution-master\MvcSolution.Data\obj\Debug\MvcSolution.Data.pdb
