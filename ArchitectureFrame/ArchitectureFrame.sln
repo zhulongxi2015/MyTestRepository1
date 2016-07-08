@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{1B70AFEC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Public", "Public", "{6B47A79B-3FCF-4B8C-A598-2709FABBB2D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchitectureFrame.Web.Agency", "ArchitectureFrame.Web.Agency\ArchitectureFrame.Web.Agency.csproj", "{17CDFBFD-E245-4555-9780-4720B32E74B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{D5DAD79A-D33A-4EA0-B228-CBF9B1ED2B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DAD79A-D33A-4EA0-B228-CBF9B1ED2B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DAD79A-D33A-4EA0-B228-CBF9B1ED2B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CDFBFD-E245-4555-9780-4720B32E74B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CDFBFD-E245-4555-9780-4720B32E74B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CDFBFD-E245-4555-9780-4720B32E74B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CDFBFD-E245-4555-9780-4720B32E74B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

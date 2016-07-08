@@ -53,8 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControllerBase\BaseController.cs" />
     <Compile Include="ControllerBase\SpringControllerFacotry.cs" />
+    <Compile Include="ControllerBase\_PublicControllerBase.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +79,10 @@
     <ProjectReference Include="..\ArchitectureFrame.Model\ArchitectureFrame.Model.csproj">
       <Project>{1b4b21f5-930d-4a82-aac4-5108a9d89792}</Project>
       <Name>ArchitectureFrame.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Web.Agency\ArchitectureFrame.Web.Agency.csproj">
+      <Project>{17CDFBFD-E245-4555-9780-4720B32E74B1}</Project>
+      <Name>ArchitectureFrame.Web.Agency</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,9 +9,10 @@ using System.Web.Mvc;
 
 namespace ArchitectureFrame.Web.Public.Controllers
 {
-    public class CategoryController : BaseController
+    public class CategoryController : PublicControllerBase
     {
         public ICategoryService CategoryService { get; set; }
+        
         public ActionResult Index()
         {
             var test = this.CategoryService.GetAll();
