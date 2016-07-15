@@ -6,3 +6,4 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\ArchitectureFrame.DTO.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.csprojResolveAssemblyReference.cache

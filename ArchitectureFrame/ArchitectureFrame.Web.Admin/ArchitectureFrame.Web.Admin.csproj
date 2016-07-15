@@ -80,6 +80,10 @@
       <Project>{17cdfbfd-e245-4555-9780-4720b32e74b1}</Project>
       <Name>ArchitectureFrame.Web.Agency</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Web.Public\ArchitectureFrame.Web.Public.csproj">
+      <Project>{C69F2E5F-1080-44EE-9EA8-B4575562CC8A}</Project>
+      <Name>ArchitectureFrame.Web.Public</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

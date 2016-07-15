@@ -37,7 +37,7 @@ namespace ArchitectureFrame.Web
         private void RegisterRoutes(RouteCollection routes)
         {
             var nameSpaces = new[] { "ArchitectureFrame.Web.Public.Controllers.*" };
-            var defaults = new { controller = "Category", action = "Index", id = UrlParameter.Optional };
+            var defaults = new { controller = "Home", action = "Index", id = UrlParameter.Optional };
 
             routes.Map("", defaults);
             routes.Map("{controller}/{action}/{id}", defaults, nameSpaces);

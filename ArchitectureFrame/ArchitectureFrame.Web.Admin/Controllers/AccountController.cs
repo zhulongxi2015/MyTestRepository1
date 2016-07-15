@@ -1,5 +1,6 @@
 ﻿using ArchitectureFrame.IService;
 using ArchitectureFrame.Web.Admin.ControllerBase;
+using ArchitectureFrame.Web.Public.ControllerBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Web.Mvc;
 
 namespace ArchitectureFrame.Web.Admin.Controllers
 {
-    public class AccountController:BaseController
+    public class AccountController: PublicControllerBase
     {
         public ICategoryService CategoryService { get; set; }
         public ActionResult Index()

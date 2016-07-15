@@ -378,7 +378,7 @@
         });
 
         uploader = new WebImageUploader("#imgUploader", []);
-        uploader.maxImages = 1;
+        uploader.maxImages = 2;
         uploader.imageType = 189;
         uploader.showTip = false;
         uploader.cropCenter = true;

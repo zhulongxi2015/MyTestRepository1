@@ -1,8 +1,5 @@
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\ArchitectureFrame.Web.Public.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\ArchitectureFrame.Web.Public.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.csprojResolveAssemblyReference.cache
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\ArchitectureFrame.Infrastructure.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\System.Web.Mvc.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\Newtonsoft.Json.dll
@@ -15,3 +12,6 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\bin\Debug\Microsoft.Web.Infrastructure.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.csprojResolveAssemblyReference.cache
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Public\obj\Debug\ArchitectureFrame.Web.Public.pdb

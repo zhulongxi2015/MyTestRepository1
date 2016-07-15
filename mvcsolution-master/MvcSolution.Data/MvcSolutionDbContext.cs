@@ -20,7 +20,7 @@ namespace MvcSolution.Data
 
         public MvcSolutionDbContext()
         {
-            Database.SetInitializer<MvcSolutionDbContext>(null);
+            Database.SetInitializer<MvcSolutionDbContext>(new DropCreateDatabaseIfModelChanges<MvcSolutionDbContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

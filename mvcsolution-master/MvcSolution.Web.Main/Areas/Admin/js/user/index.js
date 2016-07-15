@@ -2,7 +2,7 @@
     if (window.Grid) {
         return;
     }
-    window.Grid = function (dataWrapper, pagerWarper, sortWrapper) {
+    window.Grid = function (dataWrapper, pagerWarper, sortWrapper) {//创建一个类Grid
         this.url = '';
         this.dataWrapper = dataWrapper;
         this.pagerWarper = pagerWarper;
@@ -24,7 +24,7 @@
         this._request = null;
     };
 
-    Grid.prototype = {
+    Grid.prototype = {//为Grid类添加方法
         init: function () {
             var me = this;
             var $pager = $(this.pagerWarper);
@@ -677,9 +677,9 @@
 
     $(document).ready(function() {
         $("#navUser").addClass("selected");
-        grid = new Grid("tbody", ".pager");
+        grid = new Grid("tbody", ".pager");//实例化类Grid
         grid.pageSize = 20;
-        grid.init();
+        grid.init();//调用类Grid对象的方法
         grid.url = urls.list;
         grid.getDataFunc = function () {
             return criteria;

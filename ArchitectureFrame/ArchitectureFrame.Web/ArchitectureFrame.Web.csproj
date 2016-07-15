@@ -224,18 +224,111 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Public\Css\PageCss\home_style.css" />
+    <Content Include="Areas\Public\Css\PageCss\menu.css" />
+    <Content Include="Areas\Public\Css\PageCss\swipebox.css" />
+    <Content Include="Areas\Public\Images\Home\1.jpg" />
+    <Content Include="Areas\Public\Images\Home\1.png" />
+    <Content Include="Areas\Public\Images\Home\10.jpg" />
+    <Content Include="Areas\Public\Images\Home\11.jpg" />
+    <Content Include="Areas\Public\Images\Home\12.jpg" />
+    <Content Include="Areas\Public\Images\Home\13.jpg" />
+    <Content Include="Areas\Public\Images\Home\14.jpg" />
+    <Content Include="Areas\Public\Images\Home\2.jpg" />
+    <Content Include="Areas\Public\Images\Home\2.png" />
+    <Content Include="Areas\Public\Images\Home\3.jpg" />
+    <Content Include="Areas\Public\Images\Home\3.png" />
+    <Content Include="Areas\Public\Images\Home\4.jpg" />
+    <Content Include="Areas\Public\Images\Home\4.png" />
+    <Content Include="Areas\Public\Images\Home\5.jpg" />
+    <Content Include="Areas\Public\Images\Home\5.png" />
+    <Content Include="Areas\Public\Images\Home\6.jpg" />
+    <Content Include="Areas\Public\Images\Home\7.jpg" />
+    <Content Include="Areas\Public\Images\Home\8.jpg" />
+    <Content Include="Areas\Public\Images\Home\9.jpg" />
+    <Content Include="Areas\Public\Images\Home\arrow.png" />
+    <Content Include="Areas\Public\Images\Home\banner.jpg" />
+    <Content Include="Areas\Public\Images\Home\gears.png" />
+    <Content Include="Areas\Public\Images\Home\icons.svg" />
+    <Content Include="Areas\Public\Images\Home\img-sp.png" />
+    <Content Include="Areas\Public\Images\Home\logo.png" />
+    <Content Include="Areas\Public\Images\Home\menu.png" />
+    <Content Include="Areas\Public\Js\Menu\menu.js" />
+    <Content Include="_storage\Css\bootstrap.css" />
+    <Content Include="_storage\Css\bootstrap.min.css" />
+    <Content Include="_storage\Css\Site.css" />
+    <Content Include="_storage\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="_storage\Images\1.jpg" />
+    <Content Include="_storage\Images\1.png" />
+    <Content Include="_storage\Images\10.jpg" />
+    <Content Include="_storage\Images\11.jpg" />
+    <Content Include="_storage\Images\12.jpg" />
+    <Content Include="_storage\Images\13.jpg" />
+    <Content Include="_storage\Images\14.jpg" />
+    <Content Include="_storage\Images\2.jpg" />
+    <Content Include="_storage\Images\2.png" />
+    <Content Include="_storage\Images\3.jpg" />
+    <Content Include="_storage\Images\3.png" />
+    <Content Include="_storage\Images\4.jpg" />
+    <Content Include="_storage\Images\4.png" />
+    <Content Include="_storage\Images\5.jpg" />
+    <Content Include="_storage\Images\5.png" />
+    <Content Include="_storage\Images\6.jpg" />
+    <Content Include="_storage\Images\7.jpg" />
+    <Content Include="_storage\Images\8.jpg" />
+    <Content Include="_storage\Images\9.jpg" />
+    <Content Include="_storage\Images\arrow.png" />
+    <Content Include="_storage\Images\banner.jpg" />
+    <Content Include="_storage\Images\gears.png" />
+    <Content Include="_storage\Images\icons.svg" />
+    <Content Include="_storage\Images\img-sp.png" />
+    <Content Include="_storage\Images\menu.png" />
+    <Content Include="_storage\Js\ai.0.22.9-build00167.js" />
+    <Content Include="_storage\Js\ai.0.22.9-build00167.min.js" />
+    <Content Include="_storage\Js\bootstrap.js" />
+    <Content Include="_storage\Js\bootstrap.min.js" />
+    <Content Include="_storage\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="_storage\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="_storage\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="_storage\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Areas\Public\Views\Home\Index_1.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Menu.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\About.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Welcome.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Service.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Product.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Contact.cshtml" />
+    <Content Include="Areas\Public\Views\_Shared\Project.cshtml" />
+    <Content Include="Areas\Public\Views\Home\Index.cshtml" />
+    <None Include="_storage\Js\jquery-1.10.2.intellisense.js" />
+    <Content Include="_storage\Js\easing.js" />
+    <Content Include="_storage\Js\jquery-1.10.2.js" />
+    <Content Include="_storage\Js\jquery-1.10.2.min.js" />
+    <None Include="_storage\Js\jquery.validate-vsdoc.js" />
+    <Content Include="_storage\Js\jquery-1.11.1.min.js" />
+    <Content Include="_storage\Js\jquery.flexisel.js" />
+    <Content Include="_storage\Js\jquery.swipebox.min.js" />
+    <Content Include="_storage\Js\jquery.validate.js" />
+    <Content Include="_storage\Js\jquery.validate.min.js" />
+    <Content Include="_storage\Js\jquery.validate.unobtrusive.js" />
+    <Content Include="_storage\Js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="_storage\Js\modernizr-2.6.2.js" />
+    <Content Include="_storage\Js\move-top.js" />
+    <Content Include="_storage\Js\respond.js" />
+    <Content Include="_storage\Js\respond.min.js" />
+    <None Include="_storage\Js\_references.js" />
     <EmbeddedResource Include="Config\Log4Net.xml" />
     <EmbeddedResource Include="Config\Spring.Controller.xml" />
     <EmbeddedResource Include="Config\Spring.DAL.xml" />
     <EmbeddedResource Include="Config\Spring.Service.xml" />
+    <Content Include="Areas\Admin\Css\core.css" />
+    <Content Include="Areas\Admin\Js\core.js" />
+    <Content Include="Areas\Public\Css\core.css" />
+    <Content Include="Areas\Public\Js\core.js" />
     <Content Include="Config\Spring.DbContext.xml" />
     <EmbeddedResource Include="Config\Spring.ModelMapping.xml" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="libs\Antlr3.Runtime.dll" />
     <Content Include="libs\AutoMapper.dll" />
     <Content Include="libs\Castle.Core.dll" />
@@ -247,10 +340,6 @@
     <Content Include="libs\Spring.Aop.dll" />
     <Content Include="libs\Spring.Core.dll" />
     <Content Include="libs\Spring.Data.dll" />
-    <Content Include="Scripts\ai.0.22.9-build00167.js" />
-    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -260,23 +349,10 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Public\Views\_Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\_Shared\_Layout.cshtml" />
-    <Content Include="Areas\Public\Views\Home\Index.cshtml" />
     <Content Include="Areas\Public\Views\Category\Index.cshtml" />
     <Content Include="Config\Spring.Controller.Admin.xml" />
     <Content Include="Areas\Admin\Views\Account\Index.cshtml" />
     <Content Include="Areas\Public\Views\_Shared\_Error.cshtml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -284,19 +360,18 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="_storage\Js\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Css\PageCss\" />
+    <Folder Include="Areas\Admin\Images\" />
+    <Folder Include="Areas\Public\Js\Home\" />
     <Folder Include="Logs\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ArchitectureFrame.DTO\ArchitectureFrame.DTO.csproj">

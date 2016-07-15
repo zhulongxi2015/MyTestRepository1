@@ -1,0 +1,103 @@
+2016-07-15 11:35:40,553 [10] ERROR Logger [(null)] - Value cannot be null.
+Parameter name: context
+SOURCE: Microsoft.AspNet.Identity.EntityFramework
+FORM: 
+QUERYSTRING: 
+?????????: Void .ctor(System.Data.Entity.DbContext)
+????:    at Microsoft.AspNet.Identity.EntityFramework.UserStore`6..ctor(DbContext context)
+   at Microsoft.AspNet.Identity.EntityFramework.UserStore`1..ctor(DbContext context)
+   at ArchitectureFrame.Web.ApplicationUserManager.Create(IdentityFactoryOptions`1 options, IOwinContext context) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\App_Start\IdentityConfig.cs:line 45
+   at Microsoft.AspNet.Identity.Owin.IdentityFactoryProvider`1.Create(IdentityFactoryOptions`1 options, IOwinContext context)
+   at Microsoft.AspNet.Identity.Owin.IdentityFactoryMiddleware`2.<Invoke>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContextStage.<RunApp>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.<DoFinalWork>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.StageAsyncResult.End(IAsyncResult ar)
+   at Microsoft.Owin.Host.SystemWeb.IntegratedPipeline.IntegratedPipelineContext.EndFinalWork(IAsyncResult ar)
+   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-07-15 11:41:30,917 [6] ERROR Logger [(null)] - The controller for path '/Public/Home/Index' was not found or does not implement IController.
+SOURCE: System.Web.Mvc
+FORM: 
+QUERYSTRING: 
+?????????: System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+????:    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry.CreateController(RequestContext requestContext, String controllerName) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Admin\ControllerBase\SpringControllerFacotry.cs:line 39
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-07-15 11:43:05,795 [15] ERROR Logger [(null)] - Could not load file or assembly 'ArchitectureFrame.Web.Agency, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. The system cannot find the file specified.
+SOURCE: mscorlib
+FORM: 
+QUERYSTRING: 
+?????????: Void GetType(System.Reflection.RuntimeAssembly, System.String, Boolean, Boolean, System.Runtime.CompilerServices.ObjectHandleOnStack)
+????:    at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo)
+   at Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName)
+2016-07-15 11:43:59,666 [11] ERROR Logger [(null)] - The controller for path '/Public/Home/Index' was not found or does not implement IController.
+SOURCE: System.Web.Mvc
+FORM: 
+QUERYSTRING: 
+?????????: System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+????:    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry.CreateController(RequestContext requestContext, String controllerName) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Admin\ControllerBase\SpringControllerFacotry.cs:line 39
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-07-15 11:55:44,407 [20] ERROR Logger [(null)] - The controller for path '/Public/Home/Index' was not found or does not implement IController.
+SOURCE: System.Web.Mvc
+FORM: 
+QUERYSTRING: 
+?????????: System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+????:    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry.CreateController(RequestContext requestContext, String controllerName) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Admin\ControllerBase\SpringControllerFacotry.cs:line 39
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-07-15 13:32:08,467 [53] ERROR Logger [(null)] - The controller for path '/Public/Home/Index' was not found or does not implement IController.
+SOURCE: System.Web.Mvc
+FORM: 
+QUERYSTRING: 
+?????????: System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+????:    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry.CreateController(RequestContext requestContext, String controllerName) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Admin\ControllerBase\SpringControllerFacotry.cs:line 39
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016-07-15 14:13:35,969 [48] ERROR Logger [(null)] - The controller for path '/Public/Home/Index' was not found or does not implement IController.
+SOURCE: System.Web.Mvc
+FORM: 
+QUERYSTRING: 
+?????????: System.Web.Mvc.IController GetControllerInstance(System.Web.Routing.RequestContext, System.Type)
+????:    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry.CreateController(RequestContext requestContext, String controllerName) in D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Admin\ControllerBase\SpringControllerFacotry.cs:line 39
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

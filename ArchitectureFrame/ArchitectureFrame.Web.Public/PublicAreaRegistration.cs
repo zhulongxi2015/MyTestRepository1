@@ -17,8 +17,8 @@ namespace ArchitectureFrame.Web.Public
         public override void RegisterArea(AreaRegistrationContext context)
         {
             var nameSpaces = new[] { "ArchitectureFrame.Web.Public.Controllers.*" };
-            context.Map("Login_Default", "Account", "Login", nameSpaces);
-            context.Map("Logout_Default", "Account", "Logout", nameSpaces);
+            context.Map("Login", "Account", "Login", nameSpaces);
+            context.Map("Logout", "Account", "Logout", nameSpaces);
             context.Map("main/{controller}/{action}/{id}", new { controller= "main", action="index",id=UrlParameter.Optional}, nameSpaces);
         }
     }

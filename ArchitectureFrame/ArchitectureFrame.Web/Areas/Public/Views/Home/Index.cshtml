@@ -1,7 +1,108 @@
-﻿
-@{
-    ViewBag.Title = "Public Index";
+﻿@{
+    Layout = null;
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
 
-<h2>Public Index11111111111</h2>
+    <!-- for-mobile-apps -->
+    <meta charset="UTF-8">
+    @*<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />*@
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MM Video Index Toolbox">
+    <link rel="shortcut icon" type="image/png" href="~/favicon.ico" />
+    <meta name="keywords" content="" />
 
+    <link href="~/_storage/Css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Areas/Public/Css/PageCss/home_style.css" rel="stylesheet" />
+    <link href="~/Areas/Public/Css/PageCss/swipebox.css" rel="stylesheet" />
+
+    <!--main js-->
+    <script src="~/_storage/Js/jquery-1.11.1.min.js"></script>
+    <script src="~/_storage/Js/bootstrap.min.js"></script>
+
+    <!-- start-smoth-scrolling -->
+    <script src="~/_storage/Js/move-top.js"></script>
+    <script src="~/_storage/Js/easing.js"></script>
+    <script src="~/Areas/Public/Js/Menu/menu.js"></script>
+    <script src="~/_storage/Js/jquery.flexisel.js"></script>
+    <script src="~/_storage/Js/jquery.swipebox.min.js"></script>
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+    <script>
+        $(function () {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><span>Auto</span>mation</a>
+            </div>
+            <div class="banner-info">
+                <h1>
+                    The premier industrial manufaturer & exporter
+                    stebility & emphasis on client advocacy!
+                </h1>
+                <div class="more exporter">
+                    <a href="#" class="hvr-bounce-to-top">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!--nav-->
+    <div class="banner-bottom">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Menu.cshtml")
+    </div>
+    <!--//nav-->
+    <!-- welcome-company -->
+    <div class="welcome-company">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Welcome.cshtml")
+    </div>
+    <!-- //welcome-company -->
+    <!-- about -->
+    <div id="about" class="about">
+        @Html.Partial("~/Areas/Public/Views/_Shared/About.cshtml")
+    </div>
+    <!-- //about -->
+    <!-- services -->
+    <div id="services" class="services">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Service.cshtml")
+    </div>
+    <!--//services -->
+    <!--project-->
+    <div id="projects" class="projects">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Project.cshtml")
+    </div>
+    <!--//project-->
+    <!--products-->
+    <div id="products" class="products">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Product.cshtml")
+    </div>
+    <!--//products-->
+    <!--Contact-->
+    <div id="contact" class="contact">
+        @Html.Partial("~/Areas/Public/Views/_Shared/Contact.cshtml")
+    </div>
+    <!--//Contact-->
+    <div class="footer-bottom">
+        <div class="container">
+            <p>Copyright &copy; 2015.Company name All rights reserved.More Templates </p>
+        </div>
+    </div>
+</body>
+</html>

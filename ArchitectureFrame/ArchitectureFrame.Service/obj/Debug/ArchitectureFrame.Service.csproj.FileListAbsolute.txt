@@ -3,8 +3,8 @@ D:\Porjects\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Servic
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.csprojResolveAssemblyReference.cache
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.dll
 D:\Porjects\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Service.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Service.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.csprojResolveAssemblyReference.cache
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Service\obj\Debug\ArchitectureFrame.Service.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Service.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Service.pdb

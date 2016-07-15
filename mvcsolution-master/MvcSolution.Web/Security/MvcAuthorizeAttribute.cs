@@ -49,6 +49,8 @@ namespace MvcSolution.Web.Security
             var isAuthenticated = context.Request.IsAuthenticated;
             if (!string.IsNullOrEmpty(this.Roles))
             {
+                
+
                 isAuthenticated = isAuthenticated && this.Roles.Split(',').Any(r => context.User.IsInRole(r));
             }
             if (isAuthenticated)

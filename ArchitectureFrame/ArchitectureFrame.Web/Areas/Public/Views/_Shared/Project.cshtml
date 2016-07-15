@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <h3>Recent Projects</h3>
+    <div class="project-grids">
+        <ul id="flexiselDemo1">
+            <li>
+                <div class="project-grid">
+                    <img src="~/Areas/Public/Images/Home/2.jpg" alt=" " class="img-responsive" />
+                    <div class="project-grid-text">
+                        <h4>facilis expedita distinctio</h4>
+                        <p>20 June 2015, by <a href="#">admin</a>, in <a href="#">Featured.</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="project-grid">
+                    <img src="~/Areas/Public/Images/Home/3.jpg" alt=" " class="img-responsive" />
+                    <div class="project-grid-text">
+                        <h4>facilis expedita distinctio</h4>
+                        <p>20 June 2015, by <a href="#">admin</a>, in <a href="#">Featured.</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="project-grid">
+                    <img src="~/Areas/Public/Images/Home/4.jpg" alt=" " class="img-responsive" />
+                    <div class="project-grid-text">
+                        <h4>facilis expedita distinctio</h4>
+                        <p>20 June 2015, by <a href="#">admin</a>, in <a href="#">Featured.</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="project-grid">
+                    <img src="~/Areas/Public/Images/Home/6.jpg" alt=" " class="img-responsive" />
+                    <div class="project-grid-text">
+                        <h4>facilis expedita distinctio</h4>
+                        <p>20 June 2015, by <a href="#">admin</a>, in <a href="#">Featured.</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+                    $(window).load(function () {
+                        $("#flexiselDemo1").flexisel({
+                            visibleItems: 4,
+                            animationSpeed: 1000,
+                            autoPlay: true,
+                            autoPlaySpeed: 3000,
+                            pauseOnHover: true,
+                            enableResponsiveBreakpoints: true,
+                            responsiveBreakpoints: {
+                                portrait: {
+                                    changePoint: 480,
+                                    visibleItems: 1
+                                },
+                                landscape: {
+                                    changePoint: 640,
+                                    visibleItems: 3
+                                },
+                                tablet: {
+                                    changePoint: 768,
+                                    visibleItems: 3
+                                }
+                            }
+                        });
+
+                    });
+        </script>
+    </div>
+</div>

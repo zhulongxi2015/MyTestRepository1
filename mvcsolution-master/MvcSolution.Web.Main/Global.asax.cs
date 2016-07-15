@@ -1,6 +1,9 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 using MvcSolution.Services;
+using System.Web.Security;
+using System.Web;
+using System.Security.Principal;
 
 namespace MvcSolution.Web.Main
 {
@@ -23,6 +26,12 @@ namespace MvcSolution.Web.Main
 
             routes.Map("", defaults, ns);
             routes.Map("{controler}/{action}/{id}", defaults, ns);
+
+            //FormsIdentity id = (FormsIdentity)HttpContext.Current.User.Identity;
+            //FormsAuthenticationTicket ticket = id.Ticket;
+            //string userData = ticket.UserData;
+            //string[] roles = userData.Split(',');
+            //HttpContext.Current.User = new GenericPrincipal(id, roles);
         }
 
         protected override void RegisterIoc()

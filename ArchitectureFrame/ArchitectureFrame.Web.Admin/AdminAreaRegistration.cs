@@ -17,7 +17,7 @@ namespace ArchitectureFrame.Web.Admin
         public override void RegisterArea(AreaRegistrationContext context)
         {
             var nameSpaces = new[] { "ArchitectureFrame.Web.Admin.Controllers.*" };
-            context.Map("admin_default", "Account", "Index", nameSpaces);
+            context.Map("admin", "Account", "Index", nameSpaces);
             context.Map("admin/{controller}/{action}/{id}", new { controller = "account", action = "index", id = UrlParameter.Optional }, nameSpaces);
         }
 
