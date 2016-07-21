@@ -8,12 +8,12 @@ namespace ArchitectureFrame.Model.ModelExtensions
 {
    public static class ModelBaseExtensions
     {
-        public static T Get<T>(this IQueryable<T> query, Guid id) where T : ModelBase
+        public static T Get<T>(this IQueryable<T> query, int id) where T : ModelBase
         {
             return query.FirstOrDefault(x=>x.Id==id);
         }
 
-        public static IQueryable<T> Where<T>(this IQueryable<T> query, IEnumerable<Guid> ids)where T:ModelBase
+        public static IQueryable<T> Where<T>(this IQueryable<T> query, IEnumerable<int> ids)where T:ModelBase
         {
             return query.Where(x => ids.Contains(x.Id));
         }

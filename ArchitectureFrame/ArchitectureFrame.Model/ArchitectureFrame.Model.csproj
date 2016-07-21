@@ -56,10 +56,15 @@
     <Compile Include="Mappings\IMapping.cs" />
     <Compile Include="Mappings\MappingBase.cs" />
     <Compile Include="Mappings\MappingExtensions\EntityTypeConfigurationExtensions.cs" />
+    <Compile Include="Mappings\UserMapping.cs" />
+    <Compile Include="Mappings\UserRoleMapping.cs" />
+    <Compile Include="UserRole.cs" />
     <Compile Include="ModelExtensions\ArticleExtensions.cs" />
     <Compile Include="ModelExtensions\CategoryExtensions.cs" />
     <Compile Include="ModelExtensions\ModelBaseExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Role.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

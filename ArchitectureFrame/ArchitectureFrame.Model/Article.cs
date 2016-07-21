@@ -10,12 +10,9 @@ namespace ArchitectureFrame.Model
 {
    public partial class Article:ModelBase
     {
-        [Key]
-        [Column(Order =0)]
-        public int ArticleID { get; set; }
+        //[Key]
+        //public int ArticleID { get; set; }
         
-        [Key]
-        [Column(Order =1)]
         public int CategoryID { get; set; }
         public string Code { get; set; }
         public string SourceCode { get; set; }
@@ -23,7 +20,6 @@ namespace ArchitectureFrame.Model
         public string CategoryCode { get; set; }
         public short Sort { get; set; }
         public string Origin { get; set; }
-        public System.DateTime AddTime { get; set; }
 
         public virtual Category Category { get; set; }
     }

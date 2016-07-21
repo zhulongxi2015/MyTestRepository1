@@ -8,4 +8,14 @@
   <object id="ArticleService" type="ArchitectureFrame.Service.ArticleService,ArchitectureFrame.Service">
     <property name="ArticleDAL" ref="ArticleDAL"/>
   </object>
+
+  <object id="UserService" type="ArchitectureFrame.Service.UserService,ArchitectureFrame.Service">
+    <property name="UserDAL" ref="UserDAL"/>
+    <property name="RoleDAL" ref="RoleDAL"/>
+  </object>
+
+  <object id="RoleService" type="ArchitectureFrame.Service.RoleService,ArchitectureFrame.Service">
+    <property name="RoleDAL" ref="RoleDAL"/>
+  </object>
+  
 </objects>

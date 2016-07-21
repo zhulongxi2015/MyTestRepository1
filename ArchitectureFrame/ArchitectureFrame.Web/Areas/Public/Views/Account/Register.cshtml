@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = null;
+}
+<div id="register" class="tab-pane fade">
+    <form id="register_form" method="post" action="main/account/login">
+        <div class="form-group">
+            <label for="user_name" class="control-label">User Name</label>
+            <div>
+                <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="control-label">Password</label>
+            <div>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirm_password" class="control-label">Confirm Password</label>
+            <div>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Gender</label>
+            <div>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="0">
+                    Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="1">
+                    Female
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="control-label">Email</label>
+            <div>
+                <input type="Email" class="form-control" id="email" placeholder="Email" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address" class="control-label">Address</label>
+            <div>
+                <input type="text" class="form-control" id="address" placeholder="Address" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="control-label">Phone</label>
+            <div>
+                <input type="text" class="form-control" id="phone" placeholder="Phone" />
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info">Register</button>
+        </div>
+    </form>
+</div>
+<script src="~/Areas/Public/Js/Account/Register.js"></script>

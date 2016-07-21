@@ -7,4 +7,6 @@
 
   <object id="CategoryDAL" type="ArchitectureFrame.DAL.CategoryDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
   <object id="ArticleDAL" type="ArchitectureFrame.DAL.ArticleDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
+  <object id="UserDAL" type="ArchitectureFrame.DAL.UserDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
+  <object id="RoleDAL" type="ArchitectureFrame.DAL.RoleDAL,ArchitectureFrame.DAL" parent="Repository" scope="request"/>
 </objects>

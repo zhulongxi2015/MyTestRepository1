@@ -7,3 +7,8 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\obj\Debug\ArchitectureFrame.DTO.csprojResolveAssemblyReference.cache
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\ArchitectureFrame.Model.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\EntityFramework.dll
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\ArchitectureFrame.Model.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\EntityFramework.xml
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.DTO\bin\Debug\AutoMapper.dll

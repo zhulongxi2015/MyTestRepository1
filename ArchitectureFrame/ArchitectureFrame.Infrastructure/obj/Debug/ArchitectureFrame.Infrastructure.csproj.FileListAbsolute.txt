@@ -15,4 +15,3 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Inf
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.csprojResolveAssemblyReference.cache

@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\ArchitectureFrame.Web\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -46,14 +46,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\_ArchitectureFrameControllerBase.cs" />
+    <Compile Include="Extensions\HttpRequestResponseExtensions.cs" />
+    <Compile Include="Extensions\PrincipalExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\MvcSession.cs" />
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArchitectureFrame.DTO\ArchitectureFrame.DTO.csproj">
+      <Project>{C6E471E7-4738-4978-9269-8DE482B4E741}</Project>
+      <Name>ArchitectureFrame.DTO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ArchitectureFrame.Infrastructure\ArchitectureFrame.Infrastructure.csproj">
       <Project>{28d11698-c171-4ac0-a576-0179a36506f1}</Project>
       <Name>ArchitectureFrame.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.IService\ArchitectureFrame.IService.csproj">
+      <Project>{ED4839C8-B5D1-435D-801A-3F9441F2E9C5}</Project>
+      <Name>ArchitectureFrame.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Model\ArchitectureFrame.Model.csproj">
+      <Project>{1B4B21F5-930D-4A82-AAC4-5108A9D89792}</Project>
+      <Name>ArchitectureFrame.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,5 @@
-﻿using ArchitectureFrame.Infrastructure.Extensions;
+﻿using ArchitectureFrame.DTO.AutoMapper;
+using ArchitectureFrame.Infrastructure.Extensions;
 using Spring.Context.Support;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,8 @@ namespace ArchitectureFrame.Web
             this.RegisterRoutes(RouteTable.Routes);//注册自定义路由
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+            //注册Mapper profile 
+            MapperConfiguration.Configure();
         }
         /// <summary>
         /// 注册自定义路由

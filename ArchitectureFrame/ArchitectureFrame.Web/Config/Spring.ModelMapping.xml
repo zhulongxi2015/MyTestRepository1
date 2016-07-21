@@ -7,10 +7,14 @@
       <list element-type="ArchitectureFrame.Model.Mappings.IMapping,ArchitectureFrame.Model">
         <ref object="CategoryMapping"/>
         <ref object="ArticleMapping"/>
+        <ref object="UserMapping"/>
+        <ref object="UserRoleMapping"/>
       </list>
     </property>
   </object>
 
   <object id="CategoryMapping" type="ArchitectureFrame.Model.Mappings.CategoryMapping,ArchitectureFrame.Model" singleton="true"/>
   <object id="ArticleMapping" type="ArchitectureFrame.Model.Mappings.ArticleMapping,ArchitectureFrame.Model" singleton="true"/>
+  <object id="UserMapping" type="ArchitectureFrame.Model.Mappings.UserMapping,ArchitectureFrame.Model" singleton="true"/>
+  <object id="UserRoleMapping" type="ArchitectureFrame.Model.Mappings.UserRoleMapping,ArchitectureFrame.Model" singleton="true"/>
 </objects>

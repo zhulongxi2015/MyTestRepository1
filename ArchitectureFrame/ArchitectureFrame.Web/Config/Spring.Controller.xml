@@ -12,5 +12,7 @@
   <object id="CategoryController" type="ArchitectureFrame.Web.Public.Controllers.CategoryController,ArchitectureFrame.Web.Public" singleton="false">
     <property name="CategoryService" ref="CategoryService"/>
   </object>
-  
+  <object id="AccountController" type="ArchitectureFrame.Web.Public.Controllers.AccountController,ArchitectureFrame.Web.Public" singleton="false">
+    <property name="UserService" ref="UserService"/>
+  </object>
 </objects>

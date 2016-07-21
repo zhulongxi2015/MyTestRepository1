@@ -14,7 +14,6 @@ li a:hover {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
-    overflow: hidden;
 }
 
     .navbar-default .first a {
@@ -22,8 +21,8 @@ li a:hover {
     }
 
     .navbar-default .navbar-brand {
-        margin-right: 50px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 70px;
         width: 80px;
         height: 78px;
         background: url(../../Images/Home/gears.png) no-repeat 0 50%;
@@ -63,14 +62,37 @@ li a:hover {
 }
 
 .nav-sub {
-    /*float:right;*/
     margin-top: 20px;
-    /*margin-top:-55px;*/
 }
 
-/*.search-icon {
-    position: relative;
-    left: 180px;
-    top: -25px;
-    cursor:pointer;
-}*/
+.navbar-nav .dropdown .dropdown-menu {
+    width: 320px;
+    background: #F2F2F2;
+}
+
+.tab-content > div {
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.form-group button[type='submit'] {
+    outline: none;
+    border: none;
+    padding: 8px 0px;
+    width: 30%;
+    background: #168EEA;
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 3px solid #09314F;
+    text-decoration: none;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+
+.form-group button[type="submit"]:hover {
+    background: #f4f4f4;
+    color: #168EEA;
+}

@@ -3,4 +3,6 @@
   <!--各个DAL层注入-->
   <object id="CategoryDAL" type="ArchitectureFrame.DAL.CategoryDAL,ArchitectureFrame.DAL"/>
   <object id="ArticleDAL" type="ArchitectureFrame.DAL.ArticleDAL,ArchitectureFrame.DAL"/>
+  <object id="UserDAL" type="ArchitectureFrame.DAL.UserDAL,ArchitectureFrame.DAL"/>
+  <object id="RoleDAL" type="ArchitectureFrame.DAL.RoleDAL,ArchitectureFrame.DAL"/>
 </objects>

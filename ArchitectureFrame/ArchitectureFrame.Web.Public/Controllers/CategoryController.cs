@@ -19,5 +19,9 @@ namespace ArchitectureFrame.Web.Public.Controllers
             return View("~/areas/Public/Views/Category/index.cshtml");
             //~/areas/Public/Views/Category/index.cshtml
         }
+        public ActionResult test()
+        {
+            return null;
+        }
     }
 }

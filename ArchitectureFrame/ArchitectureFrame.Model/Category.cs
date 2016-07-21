@@ -9,8 +9,8 @@ namespace ArchitectureFrame.Model
 {
    public partial class Category:ModelBase
     {
-        [Key]
-        public int CategoryID { get; set; }
+        //[Key]
+        //public int CategoryID { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
         public string English { get; set; }

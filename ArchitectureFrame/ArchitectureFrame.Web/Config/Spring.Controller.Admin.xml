@@ -9,8 +9,8 @@
     <property name="ArticleService" ref="ArticleService"/>
   </object>-->
 
-  <object id="AccountController" type="ArchitectureFrame.Web.Admin.Controllers.AccountController,ArchitectureFrame.Web.Admin" singleton="false">
+  <!--<object id="AccountController" type="ArchitectureFrame.Web.Admin.Controllers.AccountController,ArchitectureFrame.Web.Admin" singleton="false">
     <property name="CategoryService" ref="CategoryService"/>
-  </object>
+  </object>-->
 
 </objects>

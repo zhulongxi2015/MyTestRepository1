@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="ControllerBase\SpringControllerFacotry.cs" />
     <Compile Include="ControllerBase\_PublicControllerBase.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

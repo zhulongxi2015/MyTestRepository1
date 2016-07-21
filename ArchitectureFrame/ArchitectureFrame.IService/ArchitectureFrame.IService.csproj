@@ -44,7 +44,9 @@
   <ItemGroup>
     <Compile Include="IArticleService.cs" />
     <Compile Include="ICategoryService.cs" />
+    <Compile Include="IRoleService.cs" />
     <Compile Include="ISQLPaging.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

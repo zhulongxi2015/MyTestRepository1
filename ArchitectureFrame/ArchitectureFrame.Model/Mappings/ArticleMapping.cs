@@ -12,6 +12,7 @@ namespace ArchitectureFrame.Model.Mappings
         {
             this.Property(x => x.Code).IsRequired().HasMaxLength(200);
             this.Property(x => x.CategoryCode).HasMaxLength(100);
+            this.HasRequired(x => x.Category).WithMany(x => x.Articles).HasForeignKey(x => x.CategoryID);
         }
     }
 }

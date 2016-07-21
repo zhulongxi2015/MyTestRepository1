@@ -1,5 +1,6 @@
 ﻿using ArchitectureFrame.Infrastructure.Core;
 using ArchitectureFrame.Infrastructure.Extensions;
+using ArchitectureFrame.Web.Agency.Extensions;
 using ArchitectureFrame.Web.Agency.Security;
 using System;
 using System.Collections.Generic;
@@ -15,17 +16,17 @@ namespace ArchitectureFrame.Web.Agency.ViewModels
         public string Title { get; set; }
         public string Error { get; set; }
 
-        //public MvcSession GetSession()
-        //{
-        //    return HttpContext.Current.Session.GetMvcSession();
-        //}
+        public MvcSession GetSession()
+        {
+            return HttpContext.Current.Session.GetMvcSession();
+        }
 
         public bool HasError => !string.IsNullOrEmpty(this.Error);
 
-        //protected Guid GetUserId()
-        //{
-        //    return HttpContext.Current.Request.GetUserId();
-        //}
+        protected int GetUserId()
+        {
+            return HttpContext.Current.Request.GetUserIdfromSession();
+        }
 
         public void Try(Action action)
         {

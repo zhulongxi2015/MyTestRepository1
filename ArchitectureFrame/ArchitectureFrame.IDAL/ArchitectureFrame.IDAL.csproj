@@ -45,6 +45,8 @@
     <Compile Include="IArticleDAL.cs" />
     <Compile Include="ICategoryDAL.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="IRoleDAL.cs" />
+    <Compile Include="IUserDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
