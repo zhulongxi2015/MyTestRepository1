@@ -3,5 +3,6 @@
   <!--Web.agency 中的属性注入-->
   <object id="MvcSession" type="ArchitectureFrame.Web.Agency.Security.MvcSession,ArchitectureFrame.Web.Agency">
     <property name="UserService" ref="UserService"/>
+    <property name="CategoryService" ref="CategoryService"/>
   </object>
 </objects>

@@ -1,5 +1,6 @@
 ﻿using Spring.Context;
 using Spring.Context.Support;
+using Spring.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace ArchitectureFrame.Web.Public.ControllerBase
         {
             IApplicationContext ctx = ContextRegistry.GetContext();
             string controller = controllerName + "Controller";
+            //bool isMatch = PathMatcher.Match("*Controller", controller, true);        
+            
             //检查是否在容器中注入了该Controller，注入了则使用注入的Controller
             if (ctx.ContainsObject(controller))
             {

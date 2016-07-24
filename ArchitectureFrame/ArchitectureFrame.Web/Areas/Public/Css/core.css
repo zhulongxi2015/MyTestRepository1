@@ -1,2 +1,61 @@
-﻿body {
+﻿/* busier ************/
+.busy-indicator
+{
+    position:relative;
+    top:0px;
+    left:0px;
+    z-index:2000;
+    vertical-align: middle;
+    text-align: center;
 }
+.busy-modal
+{
+    background:url(../images/modal-black.png);
+}
+.busy-content {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    -ms-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 auto;
+    padding: 3px 10px 3px 3px;
+    position: relative;
+    -moz-min-width: 150px;
+    -ms-min-width: 150px;
+    -o-min-width: 150px;
+    -webkit-min-width: 150px;
+    min-width: 150px;
+    display: inline-block;
+    text-align: left;
+}
+
+a.busy-cancel {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background: url(../images/remove16.png) no-repeat;
+}
+a.busy-cancel:hover
+{
+    background: url(../images/remove16.png) no-repeat 0 -16px;
+}
+.busy-text {
+    background: url("../images/loading_1.gif") no-repeat scroll 0 0 transparent;
+    border: 1px solid #FFFFFF;
+    -ms-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    min-height: 22px;
+    padding: 8px 5px 5px 35px;
+}
+/* ~~busier ************/
+/*prompt*/
+.prompt {
+    position:fixed;
+    min-width:200px;
+    min-height:60px;
+}
+/*~~prompt*/

@@ -21,6 +21,7 @@ namespace ArchitectureFrame.Web.Public.Controllers
         }
         public ActionResult test()
         {
+
             return null;
         }
     }

@@ -19,13 +19,14 @@
     <link href="~/_storage/Css/Site.css" rel="stylesheet" />
     <link href="~/Areas/Public/Css/PageCss/home_style.css" rel="stylesheet" />
     <link href="~/Areas/Public/Css/PageCss/swipebox.css" rel="stylesheet" />
-
+    <link href="~/Areas/Public/Css/core.css" rel="stylesheet" />
 
     <!--main js-->
     <script src="~/_storage/Js/jquery-1.11.1.min.js"></script>
     <script src="~/_storage/Js/bootstrap.min.js"></script>
     <script src="~/_storage/Js/jquery.validate.min.js"></script>
     <script src="~/_storage/Js/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Areas/Public/Js/core.js"></script>
 
     <!-- jquery plugin -->
     <script src="~/_storage/Js/move-top.js"></script>
@@ -36,7 +37,7 @@
 
     <script type="application/x-javascript">
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-               function hideURLbar(){ window.scrollTo(0,1); } 
+               function hideURLbar(){ window.scrollTo(0,1); }
     </script>
     <script>
         $(function () {
@@ -45,11 +46,53 @@
                 $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
             });
             $().UItoTop({ easingType: 'easeOutQuart' });
+            $("#btn").click(function () {
+                //        $.modalDialog({
+                //            id:"test1",
+                //            content: "content",
+                //            title: "title",
+                //            buttons: [{
+                //                id: "btn-save",
+                //                type:"button",
+                //                text: "Save",
+                //                css: "btn-primary",
+                //                clickFunc: function (obj) {
+                //                    alert($(obj).html());
+                //                }
+                //            },
+                //            {
+                //                id: "btn-delete",
+                //                type: "submit",
+                //                text: "Delete",
+                //                css: "btn-info",
+                //                clickFunc: function (obj) {
+                //                    alert($(obj).html());
+                //                }
+                //            }
+                //            ],
+                //            shown:function(){
+                        
+                //            },
+                //            hidden: function (e) {
+                        
+                //            }
+                //    })
+                //})
+                ArchitectureFrame.notification.alertError("test","title","");
+            })
         });
     </script>
 </head>
 
 <body>
+    <button id="btn">test</button>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                ...
+            </div>
+        </div>
+    </div>
     <!-- banner -->
     <div class="banner">
         <div class="container">

@@ -1,5 +1,6 @@
 ﻿using ArchitectureFrame.DTO.AutoMapper;
 using ArchitectureFrame.Infrastructure.Extensions;
+using ArchitectureFrame.Web.Agency;
 using Spring.Context.Support;
 using System;
 using System.Collections.Generic;
@@ -21,9 +22,9 @@ namespace ArchitectureFrame.Web
             //WebApplicationContext ctx = ContextRegistry.GetContext() as WebApplicationContext;
 
             //注册SpringControllerFactory类。
-            ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Public.ControllerBase.SpringControllerFacotry));
-            ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry));
-
+            //ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Public.ControllerBase.SpringControllerFacotry));
+            // ControllerBuilder.Current.SetControllerFactory(typeof(ArchitectureFrame.Web.Admin.ControllerBase.SpringControllerFacotry));
+            ControllerBuilder.Current.SetControllerFactory(typeof(SpringControllerFacotry));
             AreaRegistration.RegisterAllAreas();//注册区域路由
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             //RouteConfig.RegisterRoutes(RouteTable.Routes);//注册RouteConfig中的路由
@@ -41,9 +42,12 @@ namespace ArchitectureFrame.Web
         {
             var nameSpaces = new[] { "ArchitectureFrame.Web.Public.Controllers.*" };
             var defaults = new { controller = "Home", action = "Index", id = UrlParameter.Optional };
+            
 
             routes.Map("", defaults);
             routes.Map("{controller}/{action}/{id}", defaults, nameSpaces);
+
+            //routes.Map("Category/Index/{id}", null, nameSpaces);
         }
         protected void Application_Error(object sender, EventArgs e)
         {

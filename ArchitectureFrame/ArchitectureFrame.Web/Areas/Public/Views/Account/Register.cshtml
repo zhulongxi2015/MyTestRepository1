@@ -3,7 +3,7 @@
     Layout = null;
 }
 <div id="register" class="tab-pane fade">
-    <form id="register_form" method="post" action="main/account/login">
+    <form id="register_form" method="post" action="main/account/login" novalidate="novalidate">
         <div class="form-group">
             <label for="user_name" class="control-label">User Name</label>
             <div>
@@ -38,24 +38,25 @@
         <div class="form-group">
             <label for="email" class="control-label">Email</label>
             <div>
-                <input type="Email" class="form-control" id="email" placeholder="Email" />
+                <input type="Email" class="form-control" id="email" name="email" placeholder="Email" />
             </div>
         </div>
-        <div class="form-group">
+        @*<div class="form-group">
             <label for="address" class="control-label">Address</label>
             <div>
-                <input type="text" class="form-control" id="address" placeholder="Address" />
+                <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
             </div>
         </div>
         <div class="form-group">
             <label for="phone" class="control-label">Phone</label>
             <div>
-                <input type="text" class="form-control" id="phone" placeholder="Phone" />
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" />
             </div>
-        </div>
+        </div>*@
         <div class="form-group">
             <button type="submit" class="btn btn-info">Register</button>
         </div>
     </form>
+ 
 </div>
 <script src="~/Areas/Public/Js/Account/Register.js"></script>

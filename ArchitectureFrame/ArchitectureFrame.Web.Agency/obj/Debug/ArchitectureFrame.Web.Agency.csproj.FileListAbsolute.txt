@@ -29,3 +29,8 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Agency\bin\Debug\ArchitectureFrame.Model.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.pdb
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Agency\obj\Debug\ArchitectureFrame.Web.Agency.csprojResolveAssemblyReference.cache
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Agency\obj\Debug\ArchitectureFrame.Web.Agency.dll
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Agency\obj\Debug\ArchitectureFrame.Web.Agency.pdb
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.dll
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.pdb

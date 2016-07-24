@@ -23,6 +23,7 @@ namespace ArchitectureFrame.Web.Admin.ControllerBase
         public IController CreateController(RequestContext requestContext, string controllerName)
         {
             IApplicationContext ctx = ContextRegistry.GetContext();
+            Console.WriteLine(ctx.IsCaseSensitive);
             string controller = controllerName + "Controller";
             //检查是否在容器中注入了该Controller，注入了则使用注入的Controller
             if (ctx.ContainsObject(controller))

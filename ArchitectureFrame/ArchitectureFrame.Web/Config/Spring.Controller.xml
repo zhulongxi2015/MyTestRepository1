@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<objects xmlns="http://www.springframework.net">
+<objects xmlns="http://www.springframework.net" >
   <!--各个Controller模块中注入Service对象属性-->
   <!--<object id="CategoryController" type="ArchitectureFrame.Web.Controllers.CategoryController,ArchitectureFrame.Web" singleton="false">
     <property name="CategoryService" ref="CategoryService"/>
@@ -9,10 +9,15 @@
     <property name="ArticleService" ref="ArticleService"/>
   </object>-->
 
-  <object id="CategoryController" type="ArchitectureFrame.Web.Public.Controllers.CategoryController,ArchitectureFrame.Web.Public" singleton="false">
+  
+  <object id="CategoryController"  type="ArchitectureFrame.Web.Public.Controllers.CategoryController,ArchitectureFrame.Web.Public"  singleton="false">
     <property name="CategoryService" ref="CategoryService"/>
   </object>
   <object id="AccountController" type="ArchitectureFrame.Web.Public.Controllers.AccountController,ArchitectureFrame.Web.Public" singleton="false">
+    <property name="UserService" ref="UserService"/>
+  </object>
+
+  <object id="HomeController" type="ArchitectureFrame.Web.Public.Controllers.HomeController,ArchitectureFrame.Web.Public" singleton="false">
     <property name="UserService" ref="UserService"/>
   </object>
 </objects>

@@ -22,3 +22,8 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.csprojResolveAssemblyReference.cache
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.pdb
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.dll
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.pdb
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.csprojResolveAssemblyReference.cache
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.dll
+D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Model\obj\Debug\ArchitectureFrame.Model.pdb

@@ -1,4 +1,5 @@
-﻿using ArchitectureFrame.Web.Agency.ViewModels;
+﻿using ArchitectureFrame.IService;
+using ArchitectureFrame.Web.Agency.ViewModels;
 using ArchitectureFrame.Web.Public.ControllerBase;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace ArchitectureFrame.Web.Public.Controllers
 {
    public class HomeController: PublicControllerBase
     {
+        public IUserService UserService { get; set; }
         public ActionResult Index()
         {
             // return View("~/areas/Public/Views/home/index.cshtml");

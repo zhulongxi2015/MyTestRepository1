@@ -14,6 +14,7 @@ namespace ArchitectureFrame.Web.Agency.Security
     public class MvcSession
     {
         public IUserService UserService { get; set; }
+        public ICategoryService CategoryService { get; set; }
 
         private SessionUser _user;
 

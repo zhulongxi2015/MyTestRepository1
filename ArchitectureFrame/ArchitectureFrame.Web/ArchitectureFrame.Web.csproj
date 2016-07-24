@@ -253,6 +253,11 @@
     <Content Include="Areas\Public\Images\Home\img-sp.png" />
     <Content Include="Areas\Public\Images\Home\logo.png" />
     <Content Include="Areas\Public\Images\Home\menu.png" />
+    <Content Include="Areas\Public\Images\loading_1.gif" />
+    <Content Include="Areas\Public\Images\modal-black.png" />
+    <Content Include="Areas\Public\Images\modal.png" />
+    <Content Include="Areas\Public\Images\remove-42.png" />
+    <Content Include="Areas\Public\Images\remove16.png" />
     <Content Include="Areas\Public\Js\Account\login.js" />
     <Content Include="Areas\Public\Js\Account\Register.js" />
     <Content Include="Areas\Public\Js\Menu\menu.js" />
@@ -304,6 +309,9 @@
     <Content Include="Areas\Public\Views\_Shared\Project.cshtml" />
     <Content Include="Areas\Public\Views\Account\Login.cshtml" />
     <Content Include="Areas\Public\Views\Account\Register.cshtml" />
+    <None Include="libs\spring-objects-1.3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="_storage\Js\jquery-1.10.2.intellisense.js" />
     <Content Include="_storage\Js\easing.js" />
     <Content Include="_storage\Js\jquery-1.10.2.js" />
@@ -399,6 +407,10 @@
     <ProjectReference Include="..\ArchitectureFrame.Web.Admin\ArchitectureFrame.Web.Admin.csproj">
       <Project>{d5dad79a-d33a-4ea0-b228-cbf9b1ed2b5c}</Project>
       <Name>ArchitectureFrame.Web.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ArchitectureFrame.Web.Agency\ArchitectureFrame.Web.Agency.csproj">
+      <Project>{17CDFBFD-E245-4555-9780-4720B32E74B1}</Project>
+      <Name>ArchitectureFrame.Web.Agency</Name>
     </ProjectReference>
     <ProjectReference Include="..\ArchitectureFrame.Web.Public\ArchitectureFrame.Web.Public.csproj">
       <Project>{c69f2e5f-1080-44ee-9ea8-b4575562cc8a}</Project>
