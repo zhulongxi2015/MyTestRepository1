@@ -380,7 +380,6 @@ $.modalDialog = function (options) {
         }
     });
 }
-
 ArchitectureFrame.notification.dialog = function (options) {
     $.modalDialog(options);
 }
@@ -400,7 +399,6 @@ ArchitectureFrame.notification.alertInfo = function (id,title, content, css,onCl
         }]
     });
 };
-
 ArchitectureFrame.notification.alertError = function (id, title, content) {
     if (title == undefined) {
         title = "Error";
@@ -427,3 +425,128 @@ ArchitectureFrame.notification.alertError = function (id, title, content) {
     };
 })(jQuery);
 //~~html display: disable or enable
+
+//ajax
+ArchitectureFrame.ajax.busyPost = function (url,data,successCallBack,busyContent) {
+    data = "ajax=true&ts=" + new Date().getTime() + "&" + data;
+    $.ajax({
+        type: "post",
+        url: url,
+        contentType: "application/x-www-form-urlencoded",//"application/x-www-form-urlencoded",是contentType的默认值，提交到服务器端的数据格式
+        //dataType:"json",//预期服务器返回的数据类型，如果不指定，jqeury将自动根据HTTP包MIME信息来只能判断
+        data: data,
+        beforeSend: function (request) {
+            var options = {
+                isBusy: true,
+                busyContent: busyContent == undefined ? "Processing..." : busyContent,
+                request: request,
+                //showCancel: true,
+                //delay: 500,
+                modal: true
+            };
+            $.busy(options);
+        },
+        success: function (result) {//result is Json Result(Success,Message)
+            successCallBack(result);
+        },
+        error: function (err) {
+            if (err.status != 0) {
+                successCallBack({
+                    Success: false,
+                    Message: "Network error!"
+                });
+            }
+        },
+        complete: function () {//失败或成功都会调用
+            $.busy(false);
+        }
+    })
+}
+ArchitectureFrame.ajax.post = function (url, data, successCallBack) {
+    data = "ajax=true&ts=" + new Date().getTime() + "&" + data;
+    $.ajax({
+        type: "post",
+        url: url,
+        contentType: "application/x-www-form-urlencoded",//"application/x-www-form-urlencoded",是contentType的默认值，提交到服务器端的数据格式
+        //dataType:"json",//预期服务器返回的数据类型，如果不指定，jqeury将自动根据HTTP包MIME信息来只能判断
+        data: data,
+        success: function (result) {//result is Json Result(Success,Message)
+            successCallBack(result);
+        },
+        error: function (err) {
+            if (err.status != 0) {
+                successCallBack({
+                    Success: false,
+                    Message: "Network error!"
+                });
+            }
+        }
+    })
+}
+ArchitectureFrame.ajax.load = function (wrapper,url,successCallBack,message) {
+    var $wrapper = $(wrapper);
+    $wrapper.empty();//把所有段落的子元素（包括文本节点）删除
+    message == undefined ? "Loading..." : message;
+    $wrapper.html("<div class='loading'>" + message + "</div>");
+    var loadUrl = "";
+    if (url.indexOf("?") < 0) {
+        loadUrl = url + "?ajax=true&ts=" + new Date().getTime();
+    } else {
+        loadUrl = url + "&ajax=true&ts=" + new Date().getTime();
+    }
+    $.ajax({
+        type: "get",
+        url: loadUrl,
+        success: function (result) {
+            $wrapper.html(result);
+            if (successCallBack != undefined && successCallBack != null) {
+                sucessCallBack();
+            }
+        },
+        error:function(){
+            $wrapper.html("<div class='load-error'><span class='error'>Error occuurred.</span><a href='javascript:void(0);'>Re-try</a></div>");
+            $wrapper.find("a").click(function () {
+                MvcSolution.ajax.load(wrapper, url, successCallback);
+            });
+        }
+    })
+}
+//~~ajax
+
+//keydown
+ArchitectureFrame.utils.onEnterKeydown = function (inputSelector,callback) {
+    $(inputSelector).keydown(function (e) {
+        if (e.KeyCode == 13) {
+            callback();
+        }
+    })
+}
+//~~keydown
+
+//cookie
+ArchitectureFrame.utils.getCookieValue = function (name) { 
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            if (cookie.substring(0, name.length + 1) == (name + "=")) {
+                cookieValue = decodeURIComponent(name.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+ArchitectureFrame.utils.removeCookie = function (name) {
+    var value = this.getCookieValue(name);
+    if (value != null) {
+        var exp = new Date();
+        exp.setFullYear(2000);
+        document.cookie = name + "=" + value + ";path=/;expires=" + exp.toGMTString();
+    }
+}
+ArchitectureFrame.utils.setCookie = function (name,value,expire) {
+    document.cookie = name + "=" + value + ";path=/;expires=" + expire.toGMTString();
+}
+//~~cookie

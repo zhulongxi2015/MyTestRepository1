@@ -59,3 +59,12 @@ a.busy-cancel:hover
     min-height:60px;
 }
 /*~~prompt*/
+
+.error {
+    background-color: lightyellow;
+    border: 1px solid #dddddd;
+    color: red;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px;
+}
