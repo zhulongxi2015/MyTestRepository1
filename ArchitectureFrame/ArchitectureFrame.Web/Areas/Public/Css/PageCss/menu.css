@@ -75,24 +75,3 @@ li a:hover {
     padding-bottom: 0px;
 }
 
-.form-group button[type='submit'] {
-    outline: none;
-    border: none;
-    padding: 8px 0px;
-    width: 30%;
-    background: #168EEA;
-    color: #fff;
-    font-size: 15px;
-    border-bottom: 3px solid #09314F;
-    text-decoration: none;
-    transition: .5s all;
-    -webkit-transition: .5s all;
-    -moz-transition: .5s all;
-    -o-transition: .5s all;
-    -ms-transition: .5s all;
-}
-
-.form-group button[type="submit"]:hover {
-    background: #f4f4f4;
-    color: #168EEA;
-}

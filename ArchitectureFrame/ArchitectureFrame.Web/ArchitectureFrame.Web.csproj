@@ -262,6 +262,7 @@
     <Content Include="Areas\Public\Js\Account\Register.js" />
     <Content Include="Areas\Public\Js\Menu\menu.js" />
     <Content Include="Config\Spring.WebAgency.xml" />
+    <Content Include="libs\System.Web.Mvc.dll" />
     <Content Include="_storage\Css\bootstrap.css" />
     <Content Include="_storage\Css\bootstrap.min.css" />
     <Content Include="_storage\Css\Site.css" />

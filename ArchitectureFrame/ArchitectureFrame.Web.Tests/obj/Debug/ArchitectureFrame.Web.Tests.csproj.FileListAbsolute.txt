@@ -34,8 +34,6 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\log4net.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\EntityFramework.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Public.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Admin.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.DTO.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.IService.dll
@@ -61,8 +59,6 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\EntityFramework.xml
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Public.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Admin.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.DTO.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.IService.pdb

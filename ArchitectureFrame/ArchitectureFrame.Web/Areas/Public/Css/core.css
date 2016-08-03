@@ -61,10 +61,10 @@ a.busy-cancel:hover
 /*~~prompt*/
 
 .error {
-    background-color: lightyellow;
-    border: 1px solid #dddddd;
+    /*background-color: lightyellow;
+    border: 1px solid #dddddd;*/
     color: red;
-    -ms-border-radius: 5px;
+    /*-ms-border-radius: 5px;
     border-radius: 5px;
-    padding: 15px;
+    padding: 15px;*/
 }

@@ -3,7 +3,7 @@
     Layout = null;
 }
 <div id="register" class="tab-pane fade">
-    <form id="register_form" method="post" action="main/account/login" novalidate="novalidate">
+    <form id="register_form" novalidate="novalidate">
         <div class="form-group">
             <label for="user_name" class="control-label">User Name</label>
             <div>
@@ -41,6 +41,11 @@
                 <input type="Email" class="form-control" id="email" name="email" placeholder="Email" />
             </div>
         </div>
+        <div class="form-group checkbox">
+            <label>
+                <input type="checkbox" id="chk_agree"/>I agree to the <a href="javascript:;">Agreement</a>
+            </label>
+        </div>
         @*<div class="form-group">
             <label for="address" class="control-label">Address</label>
             <div>
@@ -54,7 +59,7 @@
             </div>
         </div>*@
         <div class="form-group">
-            <button type="submit" class="btn btn-info">Register</button>
+            <button type="button" class="btn btn-info" id="btn_register">Register</button>
         </div>
     </form>
  

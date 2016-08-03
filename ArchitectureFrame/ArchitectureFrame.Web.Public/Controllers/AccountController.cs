@@ -1,6 +1,8 @@
 ﻿using ArchitectureFrame.Infrastructure.Core;
 using ArchitectureFrame.Infrastructure.Mvc;
+using ArchitectureFrame.Infrastructure.Security;
 using ArchitectureFrame.IService;
+using ArchitectureFrame.Model.Enums;
 using ArchitectureFrame.Web.Agency.ViewModels;
 using ArchitectureFrame.Web.Public.ControllerBase;
 using System;
@@ -12,10 +14,11 @@ using System.Web.Mvc;
 
 namespace ArchitectureFrame.Web.Public.Controllers
 {
-   public class AccountController:PublicControllerBase
+    public class AccountController : PublicControllerBase
     {
-       
+
         public IUserService UserService { get; set; }
+        public IRoleService RoleService { get; set; }
 
         public ActionResult Login()
         {
@@ -27,8 +30,21 @@ namespace ArchitectureFrame.Web.Public.Controllers
             return AreaView("home/index.cshtml", new LayoutViewModel());
         }
 
+        public StandardJsonResult Register(FormCollection form)
+        {
+            return base.Try(() => {
+                Model.User user = new Model.User(form["user_name"], CryptToService.Md5HashEncrypt(form["password"]))
+                {
+                    Gender = (Gender)Enum.Parse(typeof(Gender), form["gender"])
+                };
+                UserService.Register(user);
+               var currentUser = UserService.GetItems(u => u.UserName.ToLower() == form["user_name"]).FirstOrDefault();
+                string[] userRoles = RoleService.GetUserRoleNames(currentUser.Id);
+                base.LoginUser(currentUser, userRoles);
+            });
+        }
         public StandardJsonResult CheckUserName(string userName)
-      {
+        {
             return base.Try(() =>
             {
                 var query = UserService.GetItems(u => u.UserName == userName);

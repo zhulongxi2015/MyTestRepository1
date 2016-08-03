@@ -30,7 +30,14 @@ namespace ArchitectureFrame.Model
         {
             this.UserName = userName;
             this.Password = pwd;
-            this.NickName = userName.Substring(0, userName.IndexOf("@"));
+            if (userName.IndexOf("@") > 0)
+            {
+                this.NickName = userName.Substring(0, userName.IndexOf("@"));
+            }
+            else
+            {
+                this.NickName = UserName;
+            }
         }
         public void UpdateByCompleteRegistration(User user)
         {

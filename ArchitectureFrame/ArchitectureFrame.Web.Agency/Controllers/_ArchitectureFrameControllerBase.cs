@@ -2,6 +2,8 @@
 using ArchitectureFrame.Infrastructure.Extensions;
 using ArchitectureFrame.Infrastructure.Log;
 using ArchitectureFrame.Infrastructure.Mvc;
+using ArchitectureFrame.Model;
+using ArchitectureFrame.Web.Agency.Extensions;
 using ArchitectureFrame.Web.Agency.Security;
 using ArchitectureFrame.Web.Agency.ViewModels;
 using System;
@@ -86,10 +88,10 @@ namespace ArchitectureFrame.Web.Agency.Controllers
             return View("~/areas/public/views/shared/message.cshtml", model);
         }
 
-        //protected MvcSession GetSession()
-        //{
-        //    return System.Web.HttpContext.Current.Session.GetMvcSession();
-        //}
+        protected MvcSession GetSession()
+        {
+            return System.Web.HttpContext.Current.Session.GetMvcSession();
+        }
 
         public StandardJsonResult Try(Action action)
         {
@@ -129,10 +131,10 @@ namespace ArchitectureFrame.Web.Agency.Controllers
         //    return Request.GetUserId();
         //}
 
-        //protected void LoginUser(Guid userId)
-        //{
-        //    Response.SetAuthCookie(userId.ToString());
-        //    GetSession().Login(userId);
-        //}
+        protected void LoginUser(User user,string[] userRoles)
+        {
+            Response.SetAuthorCookie(user.UserName, userRoles);
+            GetSession().Login(user.Id);
+        }
     }
 }

@@ -15,6 +15,7 @@
   </object>
   <object id="AccountController" type="ArchitectureFrame.Web.Public.Controllers.AccountController,ArchitectureFrame.Web.Public" singleton="false">
     <property name="UserService" ref="UserService"/>
+    <property name="RoleService" ref="RoleService"/>
   </object>
 
   <object id="HomeController" type="ArchitectureFrame.Web.Public.Controllers.HomeController,ArchitectureFrame.Web.Public" singleton="false">

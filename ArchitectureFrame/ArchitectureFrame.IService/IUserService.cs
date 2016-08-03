@@ -15,7 +15,7 @@ namespace ArchitectureFrame.IService
         SessionUser GetSessionUser(string userName);
         void Login(string userName, string password);
         User GetbyId(int id);
-        void Register(string useraName, string password);
+        void Register(User user);
 
         //定义跟业务逻辑相关的方法
         IQueryable<User> GetAll();

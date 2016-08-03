@@ -68,14 +68,14 @@ namespace ArchitectureFrame.Service
             }
         }
 
-        public void Register(string userName, string password)
+        public void Register(User user)
         {
             var ip = HttpContext.Current.Request.UserHostAddress;
-            if (UserDAL.Exists(u => u.UserName == userName))
+            if (UserDAL.Exists(u => u.UserName == user.UserName))
             {
                 throw new KnownException("User already exists");
             }
-            var user = new User(userName, CryptToService.Md5HashEncrypt(password));
+            //var user = new User(userName, CryptToService.Md5HashEncrypt(password));
             if (!UserDAL.Add(user))
             {
                 logger.Error("Login failed: Add");

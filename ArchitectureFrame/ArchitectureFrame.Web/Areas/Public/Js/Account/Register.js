@@ -5,15 +5,19 @@
     }
     $(function () {
         //$.ajaxSetup({ cache: false });
-        FormValidate();
+        //FormValidate();
+        $("#btn_register").click(function () {
+            register();
+            return;
+        })
     });
     function FormValidate() {
         $("#register_form").validate({
-            rules:{
+            rules: {
                 user_name: {
                     required: true,
                     minlength: 2,
-                    CheckSameName:true
+                    CheckSameName: true
                     //remote: {
                     //    url: urls.CheckName,
                     //    type: "GET",
@@ -43,15 +47,15 @@
                 password:
                     {
                         required: true,
-                        IsPassword:true
+                        IsPassword: true
                     },
                 confirm_password: {
-                    required:true,
-                    IsSameAsPassword:true
+                    required: true,
+                    IsSameAsPassword: true
                 },
                 email:
                     {
-                        email:true
+                        email: true
                     }
                 //phone: {
                 //    IsPhone:true
@@ -100,13 +104,13 @@
         }, "Please enter correct phone!");
 
         $.validator.addMethod("CheckSameName", function (value, element) {
-            var flag=true;
+            var flag = true;
             $.ajax({
                 type: "get",
                 url: urls.CheckName,
                 async: false,
-                cache:false,
-                data: { username: value},
+                cache: false,
+                data: { username: value },
                 //dataType: "html",
                 scriptCharset: "UTF-8",
                 success: function (result) {
@@ -117,5 +121,21 @@
             });
             return flag;
         }, "The user name already exists!");
+    }
+
+    function register() {
+        if (!$("#chk_agree").is(":checked")) {
+            ArchitectureFrame.notification.promptWarning("You have to agree to the agreement!");
+            return;
+        }
+        $("#btn_register").cssDisable().html("Processing...");
+        ArchitectureFrame.ajax.post(urls.register, $("#register_form").serialize(), function (result) {
+            if (result.Success) {
+                ArchitectureFrame.notification.promptSuccess("Register successfully!");
+            }
+            else {
+                ArchitectureFrame.notification.promptError(result.Message);
+            }
+        });
     }
 })();
