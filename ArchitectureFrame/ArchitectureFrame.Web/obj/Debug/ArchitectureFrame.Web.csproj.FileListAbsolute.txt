@@ -185,9 +185,6 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\obj\Debug\ArchitectureFrame.Web.csprojResolveAssemblyReference.cache
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\obj\Debug\ArchitectureFrame.Web.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\obj\Debug\ArchitectureFrame.Web.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.pdb
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ApplicationInsights.config
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\roslyn\csc.exe
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -286,3 +283,6 @@ D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.W
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.pdb
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.pdb
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Model.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Agency.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web\bin\ArchitectureFrame.Web.Public.pdb

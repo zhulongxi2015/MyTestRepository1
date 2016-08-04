@@ -1,11 +1,12 @@
 ﻿(function () {
     var urls = {
         register: "/main/Account/Register",
-        CheckName: "/main/Account/CheckUserName"
+        CheckName: "/main/Account/CheckUserName",
+        registerCompleted:"/"
     }
     $(function () {
         //$.ajaxSetup({ cache: false });
-        //FormValidate();
+        FormValidate();
         $("#btn_register").click(function () {
             register();
             return;
@@ -124,17 +125,24 @@
     }
 
     function register() {
+        var $form = $("#register_form");
+        if (!$form.valid()) {
+            return;
+        }
+        var $btn_register = $("#btn_register");
         if (!$("#chk_agree").is(":checked")) {
             ArchitectureFrame.notification.promptWarning("You have to agree to the agreement!");
             return;
         }
-        $("#btn_register").cssDisable().html("Processing...");
-        ArchitectureFrame.ajax.post(urls.register, $("#register_form").serialize(), function (result) {
+        $btn_register.cssDisable().html("Processing...");
+        ArchitectureFrame.ajax.post(urls.register, $form.serialize(), function (result) {
             if (result.Success) {
                 ArchitectureFrame.notification.promptSuccess("Register successfully!");
+                window.location.replace(urls.registerCompleted);
             }
             else {
                 ArchitectureFrame.notification.promptError(result.Message);
+                $btn_register.cssEnable().html("Register");
             }
         });
     }

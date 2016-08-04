@@ -1,7 +1,29 @@
 ﻿(function () {
     var urls = {
-        login:"/main/account/login"
+        login:"/main/Account/Login"
     }
+    var returnUrl = "";
+
+    $(function () {
+        FormValidate();
+        var $hfReturnUrl = $("#hfReturnUrl");
+        if ($hfReturnUrl.length > 0) {
+            returnUrl = $hfReturnUrl.val();
+        }
+
+        $("#btn_login").click(function () {
+            if ($(this).hasClass("disabled")) {
+                return;
+            }
+            login();
+        });
+        ArchitectureFrame.utils.onEnterKeydown($("#chk_remember"), function () {
+            if ($("#btn_login").hasClass("disabled")) {
+                return;
+            }
+            login();
+        })
+    });
     function FormValidate() {
         $("#login_form").validate({
             rules: {
@@ -28,7 +50,21 @@
         })
     }
 
-    $(function () {
-        FormValidate();
-    });
+    function login() {
+        var $form = $("#login_form");
+        if (!$form.valid()) {
+            return;
+        }
+        var $btn_login = $("#btn_login");       
+        $btn_login.cssDisable().html("Login...");
+        ArchitectureFrame.ajax.post(urls.login, $form.serialize(), function (result) {
+            if (result.Success) {
+                $btn_login.html("Login succeeded...");
+                window.location = returnUrl === "" ? "/" : returnUrl;
+            } else {
+                ArchitectureFrame.notification.promptError(result.Message);
+                $btn_login.cssEnable().html("Sign in");
+            }
+        });
+    }
 })();

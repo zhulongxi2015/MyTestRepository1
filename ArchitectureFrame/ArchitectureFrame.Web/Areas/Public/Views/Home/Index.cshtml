@@ -1,4 +1,6 @@
-﻿@{
+﻿@model LayoutViewModel
+@using ArchitectureFrame.Web.Agency.ViewModels
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -85,14 +87,6 @@
 </head>
 
 <body>
-    <button id="btn">test</button>
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                ...
-            </div>
-        </div>
-    </div>
     <!-- banner -->
     <div class="banner">
         <div class="container">
@@ -113,7 +107,7 @@
     <!-- //banner -->
     <!--nav-->
     <div class="banner-bottom">
-        @Html.Partial("~/Areas/Public/Views/_Shared/Menu.cshtml")
+        @Html.Partial("~/Areas/Public/Views/_Shared/Menu.cshtml",Model)
     </div>
     <!--//nav-->
     <!-- welcome-company -->

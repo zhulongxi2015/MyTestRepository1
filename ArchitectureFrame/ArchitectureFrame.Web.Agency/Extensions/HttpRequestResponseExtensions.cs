@@ -1,4 +1,5 @@
-﻿using ArchitectureFrame.Web.Agency.Security;
+﻿using ArchitectureFrame.Infrastructure.Extensions;
+using ArchitectureFrame.Web.Agency.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace ArchitectureFrame.Web.Agency.Extensions
         {
             var expire = DateTime.Now.AddDays(1);
             var ticket = new FormsAuthenticationTicket(1, userName, DateTime.Now, expire, true, string.Join(",",userRoles));
-
+            
             var cookie = new HttpCookie(FormsAuthentication.FormsCookieName);
             cookie.Domain = FormsAuthentication.CookieDomain;
             cookie.Path = FormsAuthentication.FormsCookiePath;
@@ -54,6 +55,23 @@ namespace ArchitectureFrame.Web.Agency.Extensions
             response.Charset = "UTF-8";
             response.ContentEncoding = Encoding.Default;
             response.ContentType = "application/ms-excel";
+        }
+
+        public static string GetUserHostAddress(this HttpRequest request)
+        {
+            //直接获取客户端Ip地址（无视代理Ip）
+            string userHostAddress = request.UserHostAddress;
+            //如果客户端使用了代理服务器，则利用HTTP_X_FORWARDED_FOR找到客户端IP地址,由于通过代理服务器的HTTP_X_FORWARDED_FOR获取的ip地址是直接从http报头的"X_FORWARDED_FOR"属性取得，所以这里就提供给恶意破坏者一个办法:可以伪造IP地址!! 故这里忽视代理服务器地址
+            // string userHostAddress = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString().Split(',')[0].Trim();
+            if (string.IsNullOrEmpty(userHostAddress))
+            {
+                userHostAddress = request.ServerVariables["REMOTE_ADDR"];
+            }
+            if (!string.IsNullOrEmpty(userHostAddress) && userHostAddress.IsIP())
+            {
+                return userHostAddress;
+            }
+            return "172.0.0.1";
         }
     }
 }

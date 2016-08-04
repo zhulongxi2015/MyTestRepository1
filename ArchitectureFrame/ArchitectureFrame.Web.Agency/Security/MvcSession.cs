@@ -1,5 +1,7 @@
 ﻿using ArchitectureFrame.DTO;
 using ArchitectureFrame.IService;
+using Spring.Context;
+using Spring.Context.Support;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,7 +66,9 @@ namespace ArchitectureFrame.Web.Agency.Security
         {
             if (session[MvcSessionKey] == null)
             {
-                var mvcSession = new MvcSession();
+                //var mvcSession = new MvcSession();
+                IApplicationContext ctx = ContextRegistry.GetContext();
+                MvcSession mvcSession = ctx.GetObject("MvcSession") as MvcSession;
                 mvcSession.Init();
                 session[MvcSessionKey] = mvcSession;
                 return mvcSession;

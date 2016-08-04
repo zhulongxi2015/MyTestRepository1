@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace ArchitectureFrame.Web.Public.Controllers
 {
@@ -20,25 +21,42 @@ namespace ArchitectureFrame.Web.Public.Controllers
         public IUserService UserService { get; set; }
         public IRoleService RoleService { get; set; }
 
-        public ActionResult Login()
+        public ActionResult Login(string returnUrl)
         {
-            return AreaView("account/login.cshtml", new LayoutViewModel());
+            var model = new LayoutViewModel<string>();
+            model.Model = returnUrl;
+            return AreaView("Account/login.cshtml", model);
         }
         [HttpPost]
-        public ActionResult Login(string user_name, string password)
+        public StandardJsonResult Login(string user_name, string password,string chk_remember)
         {
-            return AreaView("home/index.cshtml", new LayoutViewModel());
+            return base.Try(() => {
+                UserService.Login(user_name, password);
+                var currentUser = UserService.GetItems(u => u.UserName.ToLower() == user_name).FirstOrDefault();
+                string[] userRoles = RoleService.GetUserRoleNames(currentUser.Id);
+                base.LoginUser(currentUser, userRoles);
+            });
         }
 
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            GetSession().Logout();
+            Session.Abandon();
+            return Redirect("/");
+        }
         public StandardJsonResult Register(FormCollection form)
         {
             return base.Try(() => {
-                Model.User user = new Model.User(form["user_name"], CryptToService.Md5HashEncrypt(form["password"]))
+                string name = form["user_name"];
+                string password = form["password"];
+                string gender = form["gender"];
+                Model.User user = new Model.User(name, CryptToService.Md5HashEncrypt(password))
                 {
-                    Gender = (Gender)Enum.Parse(typeof(Gender), form["gender"])
+                    Gender = (Gender)Enum.Parse(typeof(Gender), gender)
                 };
                 UserService.Register(user);
-               var currentUser = UserService.GetItems(u => u.UserName.ToLower() == form["user_name"]).FirstOrDefault();
+               var currentUser = UserService.GetItems(u => u.UserName.ToLower() == name).FirstOrDefault();
                 string[] userRoles = RoleService.GetUserRoleNames(currentUser.Id);
                 base.LoginUser(currentUser, userRoles);
             });

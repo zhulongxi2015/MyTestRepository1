@@ -6,6 +6,8 @@ using ArchitectureFrame.Model;
 using ArchitectureFrame.Web.Agency.Extensions;
 using ArchitectureFrame.Web.Agency.Security;
 using ArchitectureFrame.Web.Agency.ViewModels;
+using Spring.Context;
+using Spring.Context.Support;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -134,6 +136,9 @@ namespace ArchitectureFrame.Web.Agency.Controllers
         protected void LoginUser(User user,string[] userRoles)
         {
             Response.SetAuthorCookie(user.UserName, userRoles);
+            //IApplicationContext ctx = ContextRegistry.GetContext();
+            //MvcSession mvcSesstion =ctx.GetObject("MvcSession") as MvcSession;
+          
             GetSession().Login(user.Id);
         }
     }

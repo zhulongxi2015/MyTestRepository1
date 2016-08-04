@@ -19,6 +19,7 @@ namespace ArchitectureFrame.Web.Public
             var nameSpaces = new[] { "ArchitectureFrame.Web.Public.Controllers.*" };
             context.Map("Login", "Account", "Login", nameSpaces);
             context.Map("Logout", "Account", "Logout", nameSpaces);
+            context.Map("Public", "Home", "Index", nameSpaces);
             context.Map("main/{controller}/{action}/{id}", new { controller= "main", action="index",id=UrlParameter.Optional}, nameSpaces);
         }
     }

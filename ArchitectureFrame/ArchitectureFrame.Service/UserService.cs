@@ -13,6 +13,7 @@ using ArchitectureFrame.Infrastructure.Security;
 using System.Web;
 using ArchitectureFrame.Infrastructure.Utilities;
 using System.Linq.Expressions;
+using ArchitectureFrame.Web.Agency.Extensions;
 
 namespace ArchitectureFrame.Service
 {
@@ -51,7 +52,7 @@ namespace ArchitectureFrame.Service
         public void Login(string userName, string password)
         {
             var users = UserDAL.GetItems(u => u.UserName == userName);
-            if (users == null)
+            if (users == null || users.Count()==0)
             {
                 throw new KnownException("The user name doesn't exists!");
             }
@@ -70,7 +71,9 @@ namespace ArchitectureFrame.Service
 
         public void Register(User user)
         {
-            var ip = HttpContext.Current.Request.UserHostAddress;
+            var ip = HttpContext.Current.Request.GetUserHostAddress();
+            user.RegisterIp = ip;
+            user.RegisterAddress = IpHelper.GetAddress(ip);
             if (UserDAL.Exists(u => u.UserName == user.UserName))
             {
                 throw new KnownException("User already exists");
