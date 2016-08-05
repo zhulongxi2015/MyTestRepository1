@@ -31,7 +31,8 @@ namespace ArchitectureFrame.Web.Agency.Security
             var actionAttribute = actionAttributes.FirstOrDefault(x => x is ArchitectureAuthorizeAttribute);
             if (actionAttribute != null)//如果action上第一个attribute是ArchitectureAuthorizeAttribute，则按照ArchitectureAuthorizeAttribute的授权认证方式进行授权认证
             {
-
+                ((ArchitectureAuthorizeAttribute)actionAttribute).Authorize(filterContext);
+                return;
             }
             //针对controller上的attribute
             var controllerAttrs = filterContext.ActionDescriptor.ControllerDescriptor.GetCustomAttributes(true);
@@ -42,9 +43,11 @@ namespace ArchitectureFrame.Web.Agency.Security
             var controllerAttr = controllerAttrs.FirstOrDefault(x => x is ArchitectureAuthorizeAttribute);
             if (controllerAttr != null)
             {
-
+                ((ArchitectureAuthorizeAttribute)controllerAttr).Authorize(filterContext);
+                return;
             }
-            base.OnAuthorization(filterContext);
+            //base.OnAuthorization(filterContext);
+            this.Authorize(filterContext);
         }
         public void Authorize(AuthorizationContext filterContext)
         {
@@ -70,7 +73,7 @@ namespace ArchitectureFrame.Web.Agency.Security
             }
             else
             {
-                filterContext.Result = new RedirectResult("/login?returnUrl=" + HttpContext.Current.Request.RawUrl);
+                filterContext.Result = new RedirectResult("/Home?returnUrl=" + HttpContext.Current.Request.RawUrl);
             }
         }
     }

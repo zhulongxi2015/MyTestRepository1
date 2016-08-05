@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ArticleDAL.cs" />
     <Compile Include="CategoryDAL.cs" />
+    <Compile Include="Extensions\DbContextExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RoleDAL.cs" />

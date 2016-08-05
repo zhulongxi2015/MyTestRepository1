@@ -1,4 +1,5 @@
 ﻿using ArchitectureFrame.IService;
+using ArchitectureFrame.Web.Agency.Security;
 using ArchitectureFrame.Web.Public.ControllerBase;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace ArchitectureFrame.Web.Public.Controllers
     {
         public ICategoryService CategoryService { get; set; }
         
+        [ArchitectureAuthorize]
         public ActionResult Index()
         {
             var test = this.CategoryService.GetAll();

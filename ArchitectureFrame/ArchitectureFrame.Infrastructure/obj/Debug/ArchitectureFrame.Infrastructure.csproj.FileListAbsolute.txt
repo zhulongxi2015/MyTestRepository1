@@ -33,3 +33,4 @@ D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.I
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.csprojResolveAssemblyReference.cache
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.dll
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Infrastructure\obj\Debug\ArchitectureFrame.Infrastructure.csprojResolveAssemblyReference.cache

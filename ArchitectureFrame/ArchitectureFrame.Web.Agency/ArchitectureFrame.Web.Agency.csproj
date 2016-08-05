@@ -62,7 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\ArchitectureAuthorizeAttribute.cs" />
     <Compile Include="Security\MvcSession.cs" />
-    <Compile Include="SpringControllerFacotry.cs" />
     <Compile Include="ViewModels\LayoutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -34,13 +34,7 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\log4net.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\EntityFramework.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.DTO.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.IService.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Model.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Spring.Core.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Agency.dll
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\AutoMapper.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Common.Logging.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
@@ -59,11 +53,7 @@ D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\EntityFramework.xml
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.DTO.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Infrastructure.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.IService.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Model.pdb
-D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\ArchitectureFrame.Web.Agency.pdb
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.csprojResolveAssemblyReference.cache
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.dll
 D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.pdb
@@ -136,3 +126,4 @@ D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.W
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.csprojResolveAssemblyReference.cache
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.dll
 D:\Myprojects\GitHubProjects\MyRepository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\obj\Debug\ArchitectureFrame.Web.Tests.pdb
+D:\Porjects\MyGitHubProjects\Repository1\ArchitectureFrame\ArchitectureFrame.Web.Tests\bin\Debug\Spring.Web.Mvc.dll

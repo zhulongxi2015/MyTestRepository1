@@ -8,6 +8,8 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Data.Entity;
 using Simple.Web.EntityFramework5;
+using System.Data.Entity.Infrastructure;
+using ArchitectureFrame.DAL.Extensions;
 
 namespace ArchitectureFrame.DAL
 {
@@ -96,6 +98,8 @@ namespace ArchitectureFrame.DAL
         /// /// <returns></returns>
         public virtual bool Update(T model)
         {
+            this.DbContext.RemoveHoldingEntityInContext(model);
+            this.DbContext.Entry<T>(model).State = EntityState.Detached;
             this.DbContext.Set<T>().Attach(model);
             this.DbContext.Entry<T>(model).State = EntityState.Modified;
             return this.DbContext.SaveChanges() > 0;
